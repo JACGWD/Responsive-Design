@@ -1,0 +1,33 @@
+main {margin: 1rem; border: 1px solid red;}
+
+figure {margin: 0;}
+
+
+/* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+
+
+
+/* Responsive Grid Step 1 */
+
+article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columns, each 1 fraction of available space: all items on one line */
+}
+
+
+
+/* Responsive Grid Step 2 */
+
+article {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(480px, 1fr)); /* 12 columns, each at least 480px or 1 fraction of available space: proper sizes of images */
+}
+
+
+
+/* Responsive Grid Step 3 */
+
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); /* auto-fit enable auto creation of rows and columns */
+}

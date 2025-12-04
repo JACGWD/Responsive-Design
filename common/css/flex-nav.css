@@ -1,0 +1,35 @@
+/* default mobile view: single column */
+
+main > nav {margin: 3rem; border: 1px solid #444;}
+
+nav {margin: 1rem; border: 1px solid red;}
+
+#demo li {margin: 0 0 1rem 0}
+
+#demo2 ul.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+#demo2 ul.navigation li {
+	margin-left: 1rem;
+}
+
+#demo3 ul.navigation li {
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 334px) {
+    
+#demo3 ul.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+#demo3 ul.navigation li {
+	margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+}

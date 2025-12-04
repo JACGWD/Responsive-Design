@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+        * {
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .box {
+            width: 600px;
+            border: 10px solid red;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <picture>
+            <source srcset="
+            ../week-2/responsive-images/2048-horizontal.png 2048w,
+            ../week-2/responsive-images/1280-horizontal.png 1280w,
+            ../week-2/responsive-images/800-horizontal.png 800w,
+            ../week-2/responsive-images/640-horizontal.png 640w"
+
+            sizes="600px">
+
+            <img src="../week-2/responsive-images/640-horizontal.png" alt="default image">
+        </picture>
+
+    </div>
+    
+</body>
+</html>

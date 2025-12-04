@@ -1,0 +1,25 @@
+main {margin: 1rem; border: 1px solid red;}
+
+figure {margin: 0;}
+
+
+/* Responsiveness Step 1 */
+
+article {
+	display: flex; /* forces elements inside article to go side-by-side */
+}
+
+
+/* Responsiveness Step 2 */
+
+article {
+	flex-wrap: wrap; /* let flexed elements tile into multiple rows if there is not enough room */
+}
+
+
+/* Responsiveness Step 3 */
+
+article {
+	gap: 1rem; /* add negative space between columns and rows */
+}
+

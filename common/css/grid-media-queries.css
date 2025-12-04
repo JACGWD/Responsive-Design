@@ -1,0 +1,41 @@
+/* default mobile view: single column */
+
+main {margin: 1rem; border: 1px solid red;}
+
+figure {margin: 0;}
+
+
+/* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+
+
+
+/* Responsive Grid Step 1 */
+
+@media screen and (min-width: 514px) { /* 480px + 2x 16px margins + 2x 1px border */
+    
+    article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); /* use a grid once you can fit a full-size thumbnail  */  
+}
+}
+
+/* Responsive Grid Step 2: center the grid for two columns */
+
+@media screen and (min-width: 1014px) {
+article {
+    margin: 0 auto; /* centers the grid by setting left and right margin widths to automatic */
+    width: 976px; /* 2x 480px figure + 16px gap */
+    gap: 16px;
+}
+
+}
+
+/* Responsive Grid Step 3: center the grid for three columns */
+
+@media screen and (min-width: 1508px) {
+article {
+    width: 1472px; /* 3x 480px figure + 2x 16px gap */
+}
+
+}
+
