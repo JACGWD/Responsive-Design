@@ -19,3 +19,8 @@ html {
 h1, h2 {margin: 0 0 3rem 0}
 
 pre {font-family:'Courier New', Courier, monospace}
+
+img.small-square {
+	width: 5rem;
+	height: 5rem;
+}
