@@ -101,3 +101,7 @@ A part of the page that is different in content than other parts of the page. Fo
 
 - The process of running your HTML or CSS code through a software that checks for errors.
 - Particularly important for CSS, as even the smallest CSS error can cause big display problems on the page.
+
+## CSS Selectors
+
+Play this game to review and learn: [https://flukeout.github.io/](https://flukeout.github.io/)
