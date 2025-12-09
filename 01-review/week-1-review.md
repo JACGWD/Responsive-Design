@@ -104,4 +104,4 @@ A part of the page that is different in content than other parts of the page. Fo
 
 ## CSS Selectors
 
-Play this game to review and learn: [https://flukeout.github.io/](https://flukeout.github.io/)
+Play this game to review and learn: [https://flukeout.github.io/](https://flukeout.github.io/) and also this cheatsheet: [https://frontend30.com/css-selectors-cheatsheet/](https://frontend30.com/css-selectors-cheatsheet/)
