@@ -13,3 +13,11 @@
 
 ### Box Model & Layout
 [https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/the-box-model-and-layouts](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/the-box-model-and-layouts)
+
+
+### Relative & Absolute Positioning
+[https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/position-relative-and-absolute?](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/position-relative-and-absolute?)
+
+
+### Position Fixed, Sticky & Static
+[https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/position-fixed-sticky-and-static-26984305](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/position-fixed-sticky-and-static-26984305)

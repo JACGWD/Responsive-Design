@@ -1,6 +1,6 @@
 # Web Page Layout Training Videos
 
-## CSS Layout Basics: Flexbox
+## CSS Layout Basics: Flexible Layout Box (Flexbox)
 
 ### Getting Started with Flexbox
 [https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/getting-started-with-flexbox](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid/getting-started-with-flexbox)

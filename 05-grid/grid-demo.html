@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * { 
+            margin: 0;
+            padding: 0;
+            }
+
+        p {margin-bottom: 1rem;}    
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid-item:nth-child(2) img {
+            position: relative;
+            top: -7rem;
+        }
+
+        .grid-container {
+            border: 5px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 200px);
+        }
+
+        .grid-item {padding: 10px 20px;}
+
+        .grid-item:nth-child(1){
+            background: darkcyan;
+            grid-row: 1/3;
+        }
+
+         .grid-item:nth-child(2) {
+            background: turquoise;
+            grid-column: 2/4;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+        }
+
+        .credits {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+        .credits, .credits a {
+            color: black;
+        }
+
+          .grid-item:nth-child(3){
+            background: aquamarine;
+        }
+
+           .grid-item:nth-child(3) img{
+            float: right;
+            width: 120px;
+            margin: 0.25rem 0.25rem 1rem 1rem;
+        }
+
+        .grid-item:nth-child(4){
+            background: rgb(127, 168, 255);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item"><p>Eiusmod occaecat qui est ipsum ullamco sit sunt enim sit laborum Lorem. Ea mollit reprehenderit ad. Esse sint nostrud ullamco laboris duis est. In sint reprehenderit minim officia Lorem cillum culpa.</p>
+<p>Dolore Lorem exercitation nisi ipsum proident ea. Quis quis commodo culpa minim. Consequat elit quis veniam dolore nulla deserunt. Commodo non reprehenderit et commodo cupidatat velit officia ex voluptate nisi amet laboris. Amet est deserunt culpa minim reprehenderit Lorem consectetur qui aute ut culpa consectetur duis irure adipisicing. Proident reprehenderit voluptate excepteur labore amet qui.</p>
+<p>Ut quis nisi nostrud occaecat. Consequat nisi adipisicing irure quis enim tempor proident consequat elit qui culpa sit dolor sit cupidatat. Commodo ad deserunt magna proident sint excepteur duis occaecat cupidatat dolore esse anim veniam do laborum. Enim mollit proident cupidatat esse incididunt exercitation. Elit tempor cillum elit laboris eiusmod enim exercitation.</p></div>
+        <div class="grid-item"><img src="./img/lok-yiu-cheung-o6k0ZH1eOwg-unsplash.jpg" alt="demo panoramic image">
+        <div class="credits">Photo by <a href="https://unsplash.com/@yiucheung?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lok Yiu Cheung</a> on <a href="https://unsplash.com/photos/city-buildings-near-body-of-water-under-cloudy-sky-o6k0ZH1eOwg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+      </div>
+        
+        <div class="grid-item">
+            <img src="../common/img/png-landscape-240w.png" alt="demo image">
+            <p>Eiusmod occaecat qui est ipsum ullamco sit sunt enim sit laborum Lorem. Ea mollit reprehenderit ad. Esse sint nostrud ullamco laboris duis est. In sint reprehenderit minim officia Lorem cillum culpa.</p><p>Eiusmod occaecat qui est ipsum ullamco sit sunt enim sit laborum Lorem. Ea mollit reprehenderit ad. Esse sint nostrud ullamco laboris duis est. In sint reprehenderit minim officia Lorem cillum culpa.</p></div>
+        
+        <div class="grid-item"><p>Ut quis nisi nostrud occaecat. Consequat nisi adipisicing irure quis enim tempor proident consequat elit qui culpa sit dolor sit cupidatat. Commodo ad deserunt magna proident sint excepteur duis occaecat cupidatat dolore esse anim veniam do laborum. Enim mollit proident cupidatat esse incididunt exercitation. Elit tempor cillum elit laboris eiusmod enim exercitation.</p></div>
+    </div>
+    
+</body>
+</html>
