@@ -2,18 +2,15 @@
 
 ## Step 1: Copy my content
 
-1. If do not have a complete page of HTML yet, copy the code from the demo. See: [https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-7b-notes.md#text-content](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-7b-notes.md#text-content) and [view-source:https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/](view-source:https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/)
+1. If do not have a complete page of HTML yet, copy the code from the demo. See: [text-content.md](text-content.md) and [view HTML source demo](./view-source-billypoppins-bioblitz.html)
 2. You can adjust the text and code as you feel appropriate.
 
-### Note
-
-Copy the View Source link and paste it into the browser URL bar.
 
 ## Step 2: CSS Reset
 
 Add the CSS Reset in order to remove the white border around the frame. You can paste the reset code at the top of the CSS stylesheet. Or link to it in the \<head> **above the link to the normal stylesheet. **Resets must always come first!**
 
-See: [https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.0.css](https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.0.css)
+See: [https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.4.css](https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.4.css)
 
 ### Most important rule for responsiveness
 
