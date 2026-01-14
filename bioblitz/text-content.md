@@ -1,60 +1,38 @@
-# Week 7b Notes
+# BioBlitz Content
 
-## Art Review
+## Finding Images 
 
-- Content vs Presentation 
-- Not enough content in mocks
-- Which images can be background (CSS background image) vs content (HTML picture tag)?
+### Think of the 5 Ws: Who? What? When? Where? and Why?
 
-
-Images for the 5 Ws:
-
-- Who: JAC students 
-- What: BioBlitz (what is a bioblitz?)
-- Where: JAC/Ste-Anne
-- When: Date
-- Why: Engage students in crowd-sourced scientific data collection
-
-Get images from Unsplash that illustrate this. 
+Any effective communication strategy must answer these five questions otherwise the reader will feel like something is missing in their understanding of the message.
 
 
-## Technical Review
 
-- Q: What is the image size?
-- Q: What is the text measure width? 
+| 5Ws                                                                | Target Information                                          |
+|--------------------------------------------------------------------|-------------------------------------------------------------|
+| Who?                                                               | JAC students                                                |
+| What?                                                              | BioBlitz (what is a bioblitz?)                              |
+| Where?                                                             | JAC/Ste-Anne                                                |
+| When?                                                              | Date (spring time)                                          |
+| Why?                                                               | Engage students in crowd-sourced scientific data collection |
 
-### Notes on Typography
+You must find at least five images that will symbolize the answer to these questions:
 
-#### The Ideal Line Length
-- [https://baymard.com/blog/line-length-readability](https://baymard.com/blog/line-length-readability)
+- Find an image of someone who looks like a JAC student.
+- Find an image of someone participating in the BioBlitz (using a cellphone outside in nature)
+- Find an image that evokes Sainte-Anne-de-Bellevue
+- Find an image that evokes spring-time (in southern Quebec)
+- Find an image that engages the reader with science 
 
-#### Line Length in Web vs Print
-- [https://www.viget.com/articles/the-line-length-misconception/](https://www.viget.com/articles/the-line-length-misconception/)
 
-#### Examples of CSS for Limiting Line Length
+Get images from [Unsplash](https://www.unsplash.com) that illustrate this. 
 
-    p { 
-        max-width: 85ch; 
-        /* paragraph only */
-    } 
 
-    or
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    legend,
-    label,
-    p,
-    li { 
-        max-width: 100ch; 
-        /* most on-screen text */
-    }  
 
 ## Text Content
+
+The following table contains the basic information needed for the project. Please feel free to adapt with your own text content, but remember to deliver the same information (answer the 5Ws).
+
 
 <table>
 <tbody>
@@ -64,7 +42,7 @@ Get images from Unsplash that illustrate this.
 <th>5 Ws</th>
 </tr>
 <tr>
-<td>John Abbott College BioBlitz 2025</td>
+<td>John Abbott College BioBlitz 2026</td>
 <td>Official Title of the Event</td>
 <td><strong>What</strong><br />
 (general statement)<br />
@@ -101,7 +79,7 @@ app.)</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>April 25-28 2025</td>
+<td>April 25-28 2026</td>
 <td>Tentative dates (based on last year’s event)</td>
 <td>When</td>
 </tr>
@@ -174,95 +152,3 @@ https://inaturalist.ca/projects/john-abbott-college-campus-biodiversity-network<
 </tr>
 </tbody>
 </table>
-
-
-## Assignment: Mobile
-
-1. Create a standard html page
-2. Add style tag inside head
-3. Add multiple images using orientation media query and 1x + 2x resolutions. Image width is defined by column width in Figma. 
-4. Remember that 2x images must be saved from same size or bigger images. **Not scaled up from smaller sizes.** 
-5. Wrap elements (picture + picture, picture + text, etc) that will be side by side on larger screens inside a div. Use a "flex-container" class. 
-
-### Fonts
-
-- Find Legal typefaces
-- Adobe
-- Google
-
-#### Three fonts: Brand, headers, body
-- Find longest title, choose h1 size accordingly for mobile
-- Use type scale to find intermediates
-
-### Color palette
-
-Define color variables:
-
-#### header
-
-- Header background color
-- Header text color
-- Header anchor LoVeHA
-
-#### main
-
-- Main background color
-- Main text color
-- Main anchor LoVeHA
-
-#### footer
-
-- Footer background color
-- Footer text color
-- Footer anchor LoVeHA
-
-#### LoVeHA Rule Colors & Styles
-
-    header a:link {}
-    header a:visited  {}
-    header a:hover  {}
-    header a:active {}
-
-    main a:link  {}
-    main a:visited  {}
-    main a:hover  {}
-    main a:active  {}
-
-    footer a:hover  {}
-    footer a:active  {}
-    footer a:hover  {}
-    footer a:active  {}
-
-### Background Images
-
-1. Place full resolution images in Figma
-2. Export resized/designed elements from Figma as 1x and 2x
-3. Add as:
-
-        header {
-            background-image: url(css/img/bg.jpg); /* 1x version */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        @media (min-resolution: 2x) {
-
-        header {
-            background-image: url(css/img/bg2x.jpg); /* 2x version */
-            /* do not repeat css properties that don’t change */
-        }
-
-        } /* always comment closing media query */
-
-
-## Configuring SSH FS
-
-[Instructions to how to configure SSH FS can be found on this GitHub repo](https://github.com/JACGWD/configuring-sshfs)
-
-
-## Testing Setup
-
-Use this page to load your page multiple times into iframes of different sizes so you can observe the media queries in action. Requires PHP: use the [wordpressplayground.wordpress-playground VS Code extension](https://marketplace.visualstudio.com/items?itemName=WordPressPlayground.wordpress-playground)
-
-[https://github.com/JACGWD/Responsive-iFrames](https://github.com/JACGWD/Responsive-iFrames)
-
