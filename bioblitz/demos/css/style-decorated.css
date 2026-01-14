@@ -1,376 +1,424 @@
-h1 { font-size: 2.25em; }
-h2 { font-size: 1.9656em; }
-h3 { font-size: 1.7171em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.3104em; }
-h6 { font-size: 1.1447em; }
-p { font-size: 1em; }
-small { font-size: .8736em; }
+h1 {
+  font-size: 2.25em;
+}
+h2 {
+  font-size: 1.9656em;
+}
+h3 {
+  font-size: 1.7171em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.3104em;
+}
+h6 {
+  font-size: 1.1447em;
+}
+p {
+  font-size: 1em;
+}
+small {
+  font-size: 0.8736em;
+}
 
-p {margin-bottom: 1rem;}
+p {
+  margin-bottom: 1rem;
+}
 
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #eb7943;
-    font-weight: bold;
-    line-height: 1.1;
-    margin: 2rem 0 1rem 0;
+  color: #eb7943;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 2rem 0 1rem 0;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    background-color: #9bc5f3;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #9bc5f3;
 }
 
-
-
 #jac-logo {
-    filter: invert(1);
-    margin: 0 auto 9rem auto;
-    max-width: 425px;
-    display: block;
+  filter: invert(1);
+  margin: 0 auto 9rem auto;
+  max-width: 425px;
+  display: block;
 }
 
 h1 span {
-    display: block;
-    font-size: 150%
+  display: block;
+  font-size: 150%;
 }
 
 header {
-	background-image: url(../img/jac-square.jpg);
-	background-size: 100%;
-	height: 35rem;
-	background-repeat: no-repeat;
-	background-color: #257add;
-	padding-top: 0rem;
-	background-position-y: 17rem;
-	position: relative;
-	margin: 0;
-	padding: 1rem 0 0 0;
+  background-image: url(../img/jac-square.jpg);
+  background-size: 100%;
+  height: 35rem;
+  background-repeat: no-repeat;
+  background-color: #257add;
+  padding-top: 0rem;
+  background-position-y: 17rem;
+  position: relative;
+  margin: 0;
+  padding: 1rem 0 0 0;
 }
 
 h1 {
-    line-height: 1;
-    text-align: center;
-    color: #FFB300;
-    font-weight: bold;
-    position: relative;
-    top: -7rem
+  line-height: 1;
+  text-align: center;
+  color: #ffb300;
+  font-weight: bold;
+  position: relative;
+  top: -7rem;
 }
 
 header h2 {
-    margin: 0;
-    color: #fff;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 1.3;
-    text-align: center;
-    font-size: 1.5rem;
-    background-color: #596c21;
-    padding: 1rem;
-    margin-top: 80vw;
-    max-width: 40ch;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #596c21;
+  padding: 1rem;
+  margin-top: 80vw;
+  max-width: 40ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
-	/* border: 1px solid #444; */
-	margin: 1rem 0.5rem 5rem 0.5rem;
-	padding: 1rem;
-	background-color: #fff;
+  /* border: 1px solid #444; */
+  margin: 1rem 0.5rem 5rem 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 picture {
-    max-width: 18.75rem;
-    /* 18.75rem * 16 = 300px */
+  max-width: 18.75rem;
+  /* 18.75rem * 16 = 300px */
 }
 
 footer {
-	background-color: #2679d8;
-	color: #fff;
-	height: 10rem;
-	line-height: 5rem;
-	text-align: center;
+  background-color: #2679d8;
+  color: #fff;
+  height: 10rem;
+  line-height: 5rem;
+  text-align: center;
 }
 
-footer a:link {color: white; text-decoration: none;}
-footer a:visited {color: rgb(220, 218, 218);}
-footer a:hover {text-decoration: underline;}
-footer a:active {color: rgb(216, 216, 30);}
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+footer a:visited {
+  color: rgb(220, 218, 218);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer a:active {
+  color: rgb(216, 216, 30);
+}
 
 ol {
-	list-style-type: decimal;
-	margin-left: 1rem;
-	margin-bottom: 1rem;
+  list-style-type: decimal;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
-ol + p {font-weight: bold; text-align: center;}
+ol + p {
+  font-weight: bold;
+  text-align: center;
+}
 
 .how .flex-container a {
-	display: flex;
-	width: 50%;
-	justify-content: center;
+  display: flex;
+  width: 50%;
+  justify-content: center;
 }
 
 .how .flex-container .flex-container {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-    margin: 2rem 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
 
 .how .flex-container a.ios {
-	width: 30%;
+  width: 30%;
 }
 
 .ios img {
-	width: 2.5rem;
+  width: 2.5rem;
 }
 
 #inat {
-	height: auto;
-	display: block;
+  height: auto;
+  display: block;
 }
 
 .slogan {
-	font-weight: bold;
-	text-align: center;
-	margin-top: 2rem;
-	font-size: 1.5rem;
-	color: #74ac00;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #74ac00;
 }
 
 #gbif {
-	float: right;
-	width: 6rem;
-	margin: 0 0 0.5rem 0.5rem;
+  float: right;
+  width: 6rem;
+  margin: 0 0 0.5rem 0.5rem;
 }
 
-
 @media screen and (min-width: 48rem) {
+  #jac-logo {
+    margin: unset;
+  }
 
-    #jac-logo {
-        margin: unset;
-    }
+  header {
+    background-size: cover;
+    height: 35rem;
+    background-position-y: -9rem;
+    margin: -2rem -2rem 2rem -2rem;
+  }
 
-    header {
-        background-size: cover;
-        height: 35rem;
-        background-position-y: -9rem;
-    }
+  h1 {
+    color: white;
+    margin-top: 17.6rem;
+    text-shadow: 3px 4px 5px #444;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3rem;
+  }
 
-    h1 {
-        color: white;
-        margin-top: 17.6rem;
-        text-shadow: 3px 4px 5px #444;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 3rem;
-    }
+  p {
+    max-width: 90ch;
+  }
 
-    p {
-        max-width: 90ch;
-    }
+  picture {
+    max-width: 50%;
+    /* 36rem * 16 = 576px */
+  }
 
-    picture {
-        max-width: 36rem;
-        /* 36rem * 16 = 576px */
-    }
+  .flex-container > p,
+  .flex-container > div {
+    margin: 0 1rem;
+  }
 
-    .flex-container > p,
-    .flex-container > div {
-        margin: 0 1rem;
-    }
- 
+  .flex-container {
+    display: flex;
+    gap: 2rem;
+  }
 
-    .flex-container {
-        display: flex;
-        gap: 2rem;
-    }
+  .when .flex-container {
+    flex-direction: row-reverse;
+  }
 
-    .when .flex-container {
-        flex-direction: row-reverse;
-    }
+  .when p,
+  .when picture,
+  .why p,
+  .why picture {
+    flex-basis: 50%;
+  }
 
-    .when p,
-    .when picture,
-    .why p,
-    .why picture {
-	    flex-basis: 50%;
-    }
+  .how .flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+  }
 
-    
+  .how picture {
+    order: 2;
+  }
 
-
-    .how .flex-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2rem;
-    }
-
-    .how picture {
-        order: 2;
-      }
-
-    .how .flex-container div {
+  .how .flex-container div {
     order: 1;
-    }
+  }
 
-    .how {
-        border: 1px solid #444;
-        padding: 6rem;
-        }
+  .how {
+    border: 23px solid #74ac00;
+    padding: 6rem;
+    background-color: #edffc6;
+  }
 
-    .how h2 {color: #74ac00;}    
+  .how h2 {
+    color: #74ac00;
+  }
 
-        #inat {
-        width: 14rem;
-        }
+  #inat {
+    width: 20rem;
+    position: relative;
+    left: -3rem;
+  }
 
-        .slogan {margin-top: 0; color: #0057cf; text-align: left; font-size: 2.3rem;}
+  .slogan {
+    margin-top: 0;
+    color: #0057cf;
+    text-align: left;
+    font-size: 2.3rem;
+  }
 
-        .how picture {
-            order: 1;
-            }
-        
-        .flex-container > p, .flex-container > div {
-            margin: 0;
-            }
+  .how picture {
+    order: 1;
+  }
 
-            ol + p {
-                text-align: left;
-            }
+  .flex-container > p,
+  .flex-container > div {
+    margin: 0;
+  }
+
+  ol + p {
+    text-align: left;
+  }
 } /* always comment closing media query */
+
+
 
 
 
 @media screen and (min-width: 950px) {
-    .where {
+  .where {
 	background-image: url(img/jac-round.jpg);
 	background-repeat: no-repeat;
-	background-size: 280px;
-	background-position: 95% bottom;
+	background-size: 260px;
+	background-position: 87% 100%;
 }
 } /* always comment closing media query */
 
 
 
+
+
 @media screen and (min-width: 64rem) {
+  h1 {
+    font-size: 4.6em;
+  }
 
-    h1 {
-        font-size: 4.6em;
-    }
+  .wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+  }
 
-    .wrapper{
-        max-width: 64rem;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 2rem;
-    }
+  header h2 {
+    margin-top: 53.75rem;
+  }
 
-    header h2 {margin-top: 53.75rem;}
+  section {
+    border: unset;
+    padding: unset;
+    margin: 1rem 0 5rem 0;
+  }
 
-    section {
-        border: unset;
-        padding: unset;
-        margin: 1rem 0 5rem 0;
-    }
+  .why {
+    border: 1px solid #444;
+    padding: 2rem 6rem 5rem 6rem;
+    border-radius: 6rem;
+    background-color: #a14e0a;
+    color: white;
+  }
 
-    .why {
-        border: 1px solid #444;
-        padding: 2rem 6rem 5rem 6rem;
-        border-radius: 6rem;
-        background-color: #a14e0a;
-        color: white;
-    }
+  .why h2 {
+    color: white;
+  }
 
-    .why h2 {color: white;}
+  .why .flex-container .flex-container {
+    flex-direction: column;
+  }
 
-    .why .flex-container .flex-container {
-        flex-direction: column;
-    }
+  .why .glogo {
+    background-color: white;
+    width: 11rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 11rem;
+    height: 13rem;
+    align-items: center;
+    flex-basis: 13.3rem;
+  }
 
-    .why .glogo {
-        background-color: white;
-        width: 11rem;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        border-radius: 11rem;
-        height: 13rem;
-        align-items: center;
-        flex-basis: 13.3rem;
-    }
-
-    #gbif {
-        float: unset;
-        width: 8rem;
-        margin: 0 0 0.5rem 0.5rem;
-        height: 5rem;
-    }
-
-
-    
-}  /* always comment closing media query */
-
+  #gbif {
+    float: unset;
+    width: 8rem;
+    margin: 0 0 0.5rem 0.5rem;
+    height: 5rem;
+  }
+} /* always comment closing media query */
 
 @media screen and (min-width: 1231px) {
+  .what .flex-container {
+    position: relative;
+  }
 
-    .what .flex-container {position: relative;}
+  .what .flex-container div {
+    background-color: #0b4a02;
+    color: white;
+    text-align: center;
+    padding: 9%;
+    border-radius: 16rem;
+    height: 30rem;
+    font-weight: bold;
+    position: absolute;
+    width: 30rem;
+    left: 38rem;
+    top: 3rem;
+    font-size: 1.2rem;
+  }
 
-    .what .flex-container div {
-	background-color: #0b4a02;
-	color: white;
-	text-align: center;
-	padding: 9%;
-	border-radius: 16rem;
-	height: 30rem;
-	font-weight: bold;
-	position: absolute;
-	width: 30rem;
-	left: 38rem;
-	top: 3rem;
-	font-size: 1.2rem;
-}
+  .when {
+    background: yellow;
+    padding: 2rem;
+    margin: -8rem;
+    border-radius: 3rem;
+    margin-bottom: 4rem;
+    text-align: right;
+  }
 
-.when {
-	background: yellow;
-	padding: 2rem;
-	margin: -8rem;
-	border-radius: 3rem;
-	margin-bottom: 4rem;
-	text-align: right;
-}
+  .when img {
+    border-radius: 1rem;
+  }
 
-.when h3 {
-	font-size: 4.617em;
-	position: relative;
-	top: -1.4rem;
-}
+  .when h3 {
+    font-size: 4.617em;
+    position: relative;
+    top: -1.4rem;
+    color: white;
+    text-shadow: 2px 2px 7px #444;
+  }
 
-.how {
-	background-image: url(./img/andrey-matveev-I01NQ8W1hQY-unsplash.jpg);
-	background-size: 460px;
-	background-position: 0% 79%;
-	background-repeat: no-repeat;
-}
+  .how {
+    background-image: url(./img/andrey-matveev-I01NQ8W1hQY-unsplash.jpg);
+    background-size: 460px;
+    background-position: -10% 79%;
+    background-repeat: no-repeat;
+  }
 
-.how h2 {
-	color: #74ac00;
-	font-size: 3.5rem;
-	position: relative;
-	top: -4rem;
-}
+  .how h2 {
+    color: #74ac00;
+    font-size: 3.3rem;
+    position: relative;
+    top: -4rem;
+  }
 
-
-}/* always comment closing media query */
+  .where h2 {
+    font-size: 4.3rem;
+    position: relative;
+    top: -1rem;
+  }
+} /* always comment closing media query */
