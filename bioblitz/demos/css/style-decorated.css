@@ -163,8 +163,13 @@ ol + p {
 }
 
 .ios img {
-  width: 2.5rem;
+  height: 2.5rem;
 }
+
+.android img {
+  height: 3.5rem
+}
+
 
 #inat {
   height: auto;
@@ -209,7 +214,7 @@ ol + p {
     max-width: 90ch;
   }
 
-  picture {
+  picture:has(:not(#inat)) {
     max-width: 50%;
     /* 36rem * 16 = 576px */
   }
@@ -255,8 +260,12 @@ ol + p {
     background-color: #edffc6;
   }
 
-  .how h2 {
+
+      .how h2 {
     color: #74ac00;
+    font-size: 2.4rem;
+    position: relative;
+    top: -4rem;
   }
 
   #inat {
@@ -337,6 +346,10 @@ ol + p {
     color: white;
   }
 
+ .how h2 {
+    font-size: 3.3rem;
+  } 
+
   .why .flex-container .flex-container {
     flex-direction: column;
   }
@@ -409,12 +422,12 @@ ol + p {
     background-repeat: no-repeat;
   }
 
-  .how h2 {
+  /* .how h2 {
     color: #74ac00;
     font-size: 3.3rem;
     position: relative;
     top: -4rem;
-  }
+  } */
 
   .where h2 {
     font-size: 4.3rem;
