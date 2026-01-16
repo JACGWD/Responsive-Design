@@ -2,39 +2,104 @@
 
 ## Phase 1: HTML
 
+Please create a root folder for this project called "bioblitz" inside your OneDrive. Create the files and folders below.
+
+### Site Layout
+
+        Bioblitz Root folder
+        |
+        |- index.html
+        |- img (folder)
+            |- foreground/content/5Ws images (like jpegs from Unsplash)
+        |- css 
+            |- style.css
+            |- reset.css
+            |- bgimg (folder)  
+                |- decorative background images called up by the css
+
+
+
 - Following the example of the [CSS Zen Garden HTML](../01-review/csszengarden.com.html), take the [text-content.md](text-content.md) information and insert it into an HTML template based on this HTML structure:
 
         div.wrapper
             header <!-- visual branding -->
             main
                 section.who <!-- target the audience -->
-                    picture <!-- column 1 -->
-                    div     <!-- column 2 -->
+                    h2
+                    div.flex-container
+                        picture + img <!-- column 1 -->
+                        div     <!-- column 2 -->
+                    <!-- close flex-container div here -->
+                
                 section.what <!-- where does this happen -->
-                    picture
-                    div
+                    h2
+                    div.flex-container
+                        picture + img
+                        div
+                    <!-- close flex-container div here -->
+                
                 section.when <!-- when is the event -->
-                    picture
-                    div
+                    h2
+                    div.flex-container
+                        picture + img
+                        div
+                    <!-- close flex-container div here -->
+                
                 section.where <!-- where does this happen -->
-                    picture
-                    div
+                    h2
+                    div.flex-container
+                        picture + img
+                        div
+                    <!-- close flex-container div here -->
+                
                 section.how <!-- how does one participate? -->
-                    picture
-                    div
+                    h2
+                    div.flex-container
+                        picture + img
+                        div
+                    <!-- close flex-container div here -->
+                
                 section.why <!-- why does this event take place? -->
-                    picture
-                    div
+                    h2
+                    div.flex-container
+                        picture + img
+                        div
+                    <!-- close flex-container div here -->
             footer
         <!-- close wrapper div here -->
 
-Each section will be divided into two elements (usually pictures and divs) that will display as two columns on larger screens. [See this example of the completed HTML](./view-source-billypoppins-bioblitz.html) for reference.
+Each section will be divided into two elements (usually picture tags and divs) that will display as two columns on larger screens. [See this example of the completed HTML](./view-source-billypoppins-bioblitz.html) for reference.
+
+
+### Note about inserting images
+
+This semester we will be using the HTML 5 picture tag. It provides the means for the web browser to choose from a set of different img tags depending on certain conditions, such as if the mobile phone is held horizontally or vertically. The type of code is this:
+
+
+#### Basic usage to start the exercise
+
+        <picture>
+            <img src="picturename.jpg" alt="a demo image">
+        </picture>
+
+
+ #### Responsive usage
+
+        <picture>
+            <source srcset="flowers-portrait.jpg" media="(orientation: portrait)">
+            <source srcset="flowers-landscape.jpg" media="(orientation: landscape)">
+
+            <img src="flowers.jpg" alt="Flowers">
+            <!-- the img tag is used if the browser cannot display the sources written in the media queries -->
+        </picture>
+
+
+               
 
 ### Replace 5Ws 
 
 Replace the words "why, what, where, when, why and how" with more appealing subtitles. [Compare this page](https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/) with [this page](https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/index-decorated.html).
 
-Make sure to **validate your HTML** and fix any errors before going onto the next step.
 
 
 ### Add the images
@@ -48,9 +113,12 @@ Using the collection of images you found to "answer the 5Ws":
 - You will insert the images at full size now, but resize them later according to the sizes in use in your design.
 
 
+Make sure to **validate your HTML** and fix any errors before going onto the next step.
+
+
 ## Phase 2: Mobile First CSS
 
-### CSS Reset
+### 2.1 CSS Reset
 
 Use: [https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.4.css](https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.4.css)
 
@@ -61,7 +129,7 @@ Link to the reset file in the \<head> **above the link to the normal stylesheet.
         </head>
 
 
-### Choose your fonts
+### 2.2 Choose your fonts
 
 Add two custom font choices:
 
@@ -96,21 +164,28 @@ Add two custom font choices:
             font-style: normal;
         }
 
-        h1,h2,h3 {   
+        h1 {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            } /* Use this font exclusively for the title/branding */
+
+        h2,h3,h4,h5,h6,label,legend {   
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: bold;
             font-style: normal;
         }
 
-#### Pick your font size for mobile
+### 2.3 Pick your font sizes for mobile
 
-1. Make sure your choice of fonts are loading 
-2. Look at your page in mobile view size
+1. Make sure your choice of fonts are loading. Use Firefox's Font Inspector (in the web inspector toolbox) to see which fonts are active on the page.
+2. Look at your page in **mobile view** size
 3. Find the H1 and H2 tags
 4. Use the web inspector to adjust the h1 size up or down until it fits nicely on the page, ex: 2.1rem
-5. Go to the [Typographic Scale](https://spencermortensen.com/articles/typographic-scale/) and enter 2.1 as the R value
+5. Go to the [Typographic Scale](https://spencermortensen.com/articles/typographic-scale/) and enter the value from the previous step (ex: 2.1) as the R value
 6. Paste the CSS from the scale in your CSS
-7. You can readjust the font sizes for bigger screens using [media queries](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#examples-of-how-to-use-media-queries).
+
 
 
         h1 {
@@ -146,12 +221,59 @@ Add two custom font choices:
         }
 
 
-### Choose your color palette
+### Section 2.4 Format the header
+
+In this section, you format the size of the h1 text, the JAC logo and the negative space of the header.
+
+#### Examples
+
+        header {padding: 2rem;}
+
+        #jac-logo {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: invert(1);
+            margin: 0rem auto;
+        }
+
+        h1 {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 5rem;
+            text-align: center;
+            margin: 1rem;
+            }
+
+
+
+### 2.5 Style Headings
+
+Here we give the title and subtitles some basic formatting.
+
+#### Examples
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: bold;
+            line-height: 1.1;
+            margin: 2rem 0 1rem 0;
+        }
+
+
+
+
+### 2.6 Choose your color palette
 
 For this section, give a color to each text such as the H2 tags. Sections can have a background-color, border color and text color.
 
 
-#### Example
+#### Examples
 
         section.classname h2 {
             color: black
@@ -159,7 +281,7 @@ For this section, give a color to each text such as the H2 tags. Sections can ha
 
         section.classname {
             background-color: yellow;
-            color: black;  /* color for non-link text, use LoVeHA rules for link colors */
+            color: black;  /* color for non-link text, use LoVeHA rules below for link colors */
             border: 2px solid blue;
         }
 
@@ -174,19 +296,17 @@ For this section, give a color to each text such as the H2 tags. Sections can ha
 
         header {}
 
-        header a:link {}
-        header a:visited  {}
-        header a:hover  {}
-        header a:active {}
+
 
         h1 {}
 
+        h1 span {}
+
         header h2 {}
 
-        main a:link  {}
-        main a:visited  {}
-        main a:hover  {}
-        main a:active  {}
+
+
+        section {} /* all sections together */
 
         section.who {}
 
@@ -206,21 +326,51 @@ For this section, give a color to each text such as the H2 tags. Sections can ha
 
         section.how h2 {}
 
-        section.why {}
+        section.why {margin-bottom: 0;} /* last section */
 
         section.why h2 {}
 
         footer {}
+
+
+
+
+### 2.7 LoveHA Rules
+
+In this section, define the colors and visual attributes of text links. For example:
+
+#### Example
+
+        header a:link {color: white; text-decoration: none;}
+        header a:visited  {color: rgb(220, 218, 218);}
+        header a:hover  {text-decoration: underline;}
+        header a:active {color: magenta;}
+
+
+
+#### Required CSS selectors
+
+        header a:link {}
+        header a:visited  {}
+        header a:hover  {}
+        header a:active {}
+        
+        main a:link  {}
+        main a:visited  {}
+        main a:hover  {}
+        main a:active  {}
 
         footer a:link  {}
         footer a:visited  {}
         footer a:hover  {}
         footer a:active  {}
 
+Remember that the LoveHA rule not only defines colors but also defines basic interactivity. Effects like hover or states like visited give the user feedback about how they are using the page and where in the site they have been. Choose the colors and effects to best guide the user in visiting the site.
 
-### Heights, Widths, Margins & Padding
 
-The most important part of the design-for-mobile process is spacing elements apart. 
+### 2.8 Heights, Widths, Margins & Padding
+
+The most important part of the design-for-mobile process is **spacing elements apart**. 
 
 - Add whitespace on the left and right edges so elements do not touch the edge of the screen.
   - padding: 1rem; on body {} or div.wrapper {}
@@ -231,40 +381,215 @@ The most important part of the design-for-mobile process is spacing elements apa
   - all sections
   - footer  (margin-bottom can be zero)
 
+### 2.9 Format the picture element
+
+Here we space the images away from the text that follows underneath.
+
+        picture {
+            margin: 0 0 1rem 0;
+            display: block;
+        }
+
+
+### 2.10 Place smartphone logos side by side
+
+        .how .flex-container {
+            display: flex;  /* places the two anchor tags side by side */
+            flex-basis: 50%;
+        }
+
+        .how .flex-container a {
+            max-width: 50%; /* set the two anchors to act like two columns of 50% width */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .android img {
+            width: 200px;  /* adjust width of android logo */
+            height: auto;
+        }
+
+        .ios img {
+            height: 60px;  /* adjust height of ios logo */
+            width: auto;
+            position: relative;
+            top: 11px;  /* align vertically */
+        }
+
+
+Congratulations, you have completed the mobile design!
+
 
 
 ## Phase 3: Multi-column Layout Using Media Queries for Larger Devices
 
 
+### Going from Mobile Scale to Larger Viewports
 
+#### Controlling Page Layout at Different Viewport Sizes: Media Queries
 
-## Step 5: Add CSS colors
+<blockquote>
 
-Following the decisions you took in Figma, add your choice of background colors to:
+1. Media: The technology used to transmit the content.
+2. Query: A question.
+3. "Media Query": The web browser asks the device's operating system what it is capable of, and displays the page accordingly.
 
-    body {
-        background-color: #444;
+</blockquote>
+
+See: [https://www.w3schools.com/css/css3_mediaqueries_ex.asp](https://www.w3schools.com/css/css3_mediaqueries_ex.asp)
+
+### Examples of How Media Queries Work
+
+#### Rules for computer screens
+
+    @media screen {
+        h1 {color: red;}
+    } 
+
+#### Rules for formatting the page when printed    
+    
+    @media print {
+        h1 {color: black;}
     }
 
-    header {
-        background-color: #FFF;
+#### Rules for computer screens that are taller than they are wide    
+    
+    @media screen and (orientation: portrait) {
+
+        /* use tall background image */
+
     }
+
+#### Rules for computer screens that are narrower than 640px
+    
+    @media screen and (max-width: 640px) {
+
+        /* display navigation as hamburger menu */
+    }
+
+
+#### Rules for computer screens that are wider than 64rem
+    
+    @media screen and (min-width: 64rem) {
+
+        /* display horizontal navigation menu */
+    }
+
+#### Rules for computer screens that are narrower than 640px and taller than they are wide
+    
+    @media screen and (max-width: 640px) and (orientation: landscape) {
+
+        /* use small horizontal background image */
+    }
+
+### Mobile First
+
+"Mobile first" is the simplest strategy for designing responsive web page.
+
+1. Start with no media queries at all: Define all the styles for the mobile phone design.
+2. Once the viewport is wide enough for **two columns** of content, use a media query that puts content side-by-side *starting at that width*.
+3. Once the viewport is wide enough for **three columns** of content, use a media query that puts content side-by-side *starting at that width*.
+4. Repeat as many times as necessary depending on how many columns you need.
+5. Once you reach laptop/desktop widths, use a "wrapper" div (a fixed width box that surrounds all the content) to center the page contents.
+
+
+
+### Setting elements side-by-side
+
+#### Using Flex Box
+
+##### The Basic Alignment
+
+   @media screen and (min-width: 1024px) {
+    .flex-container {
+        display: flex;
+        /* puts elements side-by-side */
+    }
+   } /* always comment closing media query */
+
+##### Switching the Items Order
+
+    .when .flex-container {
+        flex-direction: row-reverse;
+        /* places elements in reverse order: last element becomes first */
+    }
+
+##### Setting Column Width
+
+    .when p,
+    .when picture,
+    .why p,
+    .why picture {
+	    flex-basis: 50%;
+    }
+
+
+#### Using CSS Grid
+
+##### The Basic Alignment & Column Width
+
+     .how .flex-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* two columns: each equal to one fraction of the available space */
+    }
+
+##### Switching the Items Order
+
+    .how picture {
+        order: 2;
+        /* force to go to column 2 */
+      }
+
+    .how .flex-container div {
+        order: 1;
+        /* force to go to column 1 */
+    }
+
+
+### Horizontal & Vertical Centering 
+
+#### Using line-height (for a single line of text)
+
+When you have a **single line of text**, you can vertically center it using a line-height equal to the height of the parent element. Then you can use regular text centering.
 
     footer {
-        background-color: #444;
+        background-color: #2679d8;
+        color: #fff;
+
+        height: 5rem;
+        line-height: 5rem;
+        /* the **single line** of text is the same height as the box it is in: vertical centering */
+
+        text-align: center;
+        /* horizontal centering */
     }
 
-## Step 6: Add custom fonts
+
+#### Using Flex Box
+
+    footer {
+        background-color: #2679d8;
+        color: #fff;
+        height: 5rem;
+        
+        display: flex;
+
+        align-items: center;
+        /* vertical centering */
+
+        justify-content: center;
+        /* horizontal centering */
+    }
 
 
-
-## Step 7: Flex
+#### Flex
 
 Use a media query to make items go side by side using display: flex and display: grid.
 
 See: [https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#setting-elements-side-by-side](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#setting-elements-side-by-side)
 
-## Step 8: Alternate the position of some items
+### Alternate the position of some items
 
 See: [Flexbox](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#switching-the-items-order) and [CSS Grid](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#switching-the-items-order-1)
 
@@ -281,20 +606,6 @@ Use this page to load your page multiple times into iframes of different sizes s
 
 
 
-
-## Assignment: Mobile
-
-1. Create a standard html page
-2. Add style tag inside head
-3. Add multiple images using orientation media query and 1x + 2x resolutions. Image width is defined by column width in Figma. 
-4. Remember that 2x images must be saved from same size or bigger images. **Not scaled up from smaller sizes.** 
-5. Wrap elements (picture + picture, picture + text, etc) that will be side by side on larger screens inside a div. Use a "flex-container" class. 
-
-### Fonts
-
-- Find Legal typefaces
-- Adobe
-- Google
 
 #### Three fonts: Brand, headers, body
 - Find longest title, choose h1 size accordingly for mobile
