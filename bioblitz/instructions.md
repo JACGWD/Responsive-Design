@@ -410,10 +410,10 @@ Here we space the images away from the text that follows underneath.
         }
 
         .ios img {
-            height: 60px;  /* adjust height of ios logo */
+            height: 36px;  /* adjust height of ios logo */
             width: auto;
             position: relative;
-            top: 11px;  /* align vertically */
+            top: 8px;  /* align vertically */
         }
 
 
