@@ -192,7 +192,7 @@ ol + p {
 
 @media screen and (min-width: 48rem) {
   #jac-logo {
-    margin: unset;
+    margin: 1rem auto;
   }
 
   header {
@@ -338,7 +338,7 @@ ol + p {
     border: 1px solid #444;
     padding: 2rem 6rem 5rem 6rem;
     border-radius: 6rem;
-    background-color: #a14e0a;
+    background-color: #57256e;
     color: white;
   }
 
@@ -389,7 +389,7 @@ ol + p {
     font-weight: bold;
     position: absolute;
     width: 30rem;
-    left: 38rem;
+    left: 36rem;
     top: 3rem;
     font-size: 1.2rem;
   }
@@ -435,3 +435,13 @@ ol + p {
     top: -1rem;
   }
 } /* always comment closing media query */
+
+
+@media screen and (min-width: 1314px) {
+
+.why {
+    margin: 0 -11rem;
+}
+
+
+}
