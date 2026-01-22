@@ -112,6 +112,28 @@ A "division" that means "this part of the html is different from the other parts
 - The process of running your HTML or CSS code through a software that checks for errors.
 - Particularly important for CSS, as even the smallest CSS error can cause big display problems on the page.
 
+## CSS Reset
+
+A CSS stylesheet that removes any default styles built into the web browser, and also applies some modern defaults. The purpose of using a CSS Reset is to eliminate tiny variations&emdash;such as differences in margins&emdash;in between different browsers. This makes the rendering of the design more consistent in between browsers (and devices) and reduces the risk of the design appearing broken on certain systems.
+
+**Things you may find in a CSS reset:**
+
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;  /* the border-box fix applied to everything */
+        }
+
+        * {
+         margin: 0; 
+         padding: 0;  /* margins and padding of all elements set to zero */
+         }
+
+        img {
+            max-width: 100%;  /* responsive images that scale down to fit smaller screens */
+            height: auto;
+        } 
+
 ## CSS Selectors
 
 See: [https://www.w3schools.com/cssref/css_selectors.php](https://www.w3schools.com/cssref/css_selectors.php)
