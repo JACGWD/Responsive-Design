@@ -114,7 +114,7 @@ A "division" that means "this part of the html is different from the other parts
 
 ## CSS Reset
 
-A CSS stylesheet that removes any default styles built into the web browser, and also applies some modern defaults. The purpose of using a CSS Reset is to eliminate tiny variations&emdash;such as differences in margins&emdash;in between different browsers. This makes the rendering of the design more consistent in between browsers (and devices) and reduces the risk of the design appearing broken on certain systems.
+A CSS stylesheet that removes any default styles built into the web browser, and also applies some modern defaults. The purpose of using a CSS Reset is to eliminate tiny variations—such as differences in margins—in between different browsers. This makes the rendering of the design more consistent in between browsers (and devices) and reduces the risk of the design appearing broken on certain systems.
 
 **Things you may find in a CSS reset:**
 

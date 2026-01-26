@@ -1,0 +1,126 @@
+h1 {
+  font-size: 2.25em;
+}
+h2 {
+  font-size: 1.9656em;
+}
+h3 {
+  font-size: 1.7171em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.3104em;
+}
+h6 {
+  font-size: 1.1447em;
+}
+p {
+  font-size: 1em;
+}
+small {
+  font-size: 0.8736em;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 2rem 0 1rem 0;
+}
+
+h2 {
+  color: #444;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 2rem 0 1rem 0;
+}
+
+
+header {
+  background-color: blueviolet;
+}
+
+
+article section img {display: block;}
+
+img {
+  width: 240px;
+  height: 240px;
+}
+
+strong {font-weight: bolder;}
+
+article {
+    border: 1px solid #444;
+    padding: 1rem;
+    background-color: pink;
+}
+
+section {
+    border: 2px solid blue;
+    background-color: white;
+}
+
+aside {border: 4px solid red; padding: 1rem; margin: 2rem 0; background-color: rgb(251, 255, 0);}
+
+
+footer {
+  background-color: aquamarine;
+  color: #444;
+  padding: 1rem;
+}
+
+
+
+/* EXERCISE */
+
+
+img {margin: 1rem auto;}
+
+
+@media screen and (min-width: 582px) {
+  
+
+.slogan {
+            float: left; 
+            margin-right: 1rem;
+            }
+
+.navigation li {
+  float: left; 
+  margin-right: 1rem;
+  }
+
+   section img {
+            float: left; 
+            margin: 1rem;
+            }
+
+
+        aside img {
+            float: right; 
+            margin: 0 0 1rem 1rem;
+            }
+
+          }
+
+
+@media screen and (min-width: 886px) {
+  
+main {
+  max-width: 886px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+}          
