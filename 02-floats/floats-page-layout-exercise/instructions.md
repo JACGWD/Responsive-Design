@@ -169,3 +169,25 @@ In other words, your portrait-oriented rectangular mobile design should never be
         }
 
         }  /* always comment the closing bracket */
+
+
+
+### 9. Use Float to Create Multiple Columns
+
+9.1 Add these rules to the previous media query
+
+
+        article {
+        width: 70%;
+        float: left;
+        }
+
+        aside {
+        width: 25%;
+        display: inline-block;
+        }
+
+        main {
+            overflow: auto; /* wraps the article float */
+        }
+
