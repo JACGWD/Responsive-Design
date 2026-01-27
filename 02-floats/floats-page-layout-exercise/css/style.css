@@ -85,42 +85,76 @@ footer {
 /* EXERCISE */
 
 
-/* img {margin: 1rem auto;} */
+img {
+  margin: 1rem auto;
+}
 
 
 @media screen and (min-width: 582px) {
-/*   
+  
 
 .slogan {
-            float: left; 
-            margin-right: 1rem;
-            }
+        float: left; 
+        margin-right: 1rem;
+        }
 
 .navigation li {
   float: left; 
   margin-right: 1rem;
   }
 
-   section img {
-            float: left; 
-            margin: 1rem;
-            }
+section img {
+    float: left; 
+    margin: 1rem;
+    }
+
+    aside img {
+    float: right; 
+    margin: 0 0 1rem 1rem;
+    }
 
 
-        aside img {
-            float: right; 
-            margin: 0 0 1rem 1rem;
-            } */
+
+
+
+
+
+
+
+
+
+        /* 
+
+
+
+
+  */
+
 
           }
 
 
 @media screen and (min-width: 886px) {
   
-/* main {
+ main {
   max-width: 886px;
   padding: 1rem;
   margin: 0 auto;
-} */
+}
+ /*
+article {
+    width: 70%;
+    float: left;
+    }
+
+    aside {
+    width: 25%;
+    display: inline-block;
+    }
+
+    main {
+        overflow: auto;
+    } */
+
 
 }          
