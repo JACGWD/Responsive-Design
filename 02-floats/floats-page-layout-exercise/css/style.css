@@ -85,11 +85,11 @@ footer {
 /* EXERCISE */
 
 
-img {margin: 1rem auto;}
+/* img {margin: 1rem auto;} */
 
 
 @media screen and (min-width: 582px) {
-  
+/*   
 
 .slogan {
             float: left; 
@@ -110,17 +110,17 @@ img {margin: 1rem auto;}
         aside img {
             float: right; 
             margin: 0 0 1rem 1rem;
-            }
+            } */
 
           }
 
 
 @media screen and (min-width: 886px) {
   
-main {
+/* main {
   max-width: 886px;
   padding: 1rem;
   margin: 0 auto;
-}
+} */
 
 }          
