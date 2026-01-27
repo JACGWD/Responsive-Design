@@ -85,15 +85,15 @@ footer {
 /* EXERCISE */
 
 
-img {
+/* img {
   margin: 1rem auto;
-}
+} */
 
 
 @media screen and (min-width: 582px) {
   
 
-.slogan {
+/* .slogan {
         float: left; 
         margin-right: 1rem;
         }
@@ -111,24 +111,8 @@ section img {
     aside img {
     float: right; 
     margin: 0 0 1rem 1rem;
-    }
+    } */
 
-
-
-
-
-
-
-
-
-
-
-        /* 
-
-
-
-
-  */
 
 
           }
@@ -136,12 +120,12 @@ section img {
 
 @media screen and (min-width: 886px) {
   
- main {
+ /* main {
   max-width: 886px;
   padding: 1rem;
   margin: 0 auto;
 }
- /*
+
 article {
     width: 70%;
     float: left;
