@@ -518,6 +518,10 @@ or
         .when .flex-container {
             display: flow-root;
             /* wraps float */
+
+            /* alternatively you can use overflow: auto; here
+                or add class="clearfix" to the parent 
+                element's HTML code */
         }
     
     .when .flex-container picture {
