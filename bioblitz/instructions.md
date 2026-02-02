@@ -120,7 +120,7 @@ Make sure to **validate your HTML** and fix any errors before going onto the nex
 
 ### 2.1 CSS Reset
 
-Use: [https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.4.css](https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.4.css)
+Use: [https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.5.css](https://raw.githubusercontent.com/JACGWD/CSS-Reset-Selector/refs/heads/main/reset/simple-css-reset-v2.5.css)
 
 Link to the reset file in the \<head> **above the link to the normal stylesheet. Resets must always come first!**
 
@@ -131,10 +131,13 @@ Link to the reset file in the \<head> **above the link to the normal stylesheet.
 
 ### 2.2 Choose your fonts
 
-Add two custom font choices:
+Take the time to research the type of fonts associated to the art style you have selected in the Design Theory class. This is particularly important for the font chosen for use in the headers. The body font should chosen for its complementary style, but also for its legibility at sizes between 12-16px.
 
-1. Headers (h1 to h6)
-2. Body text (all other texts)
+Add three custom font choices:
+
+1. H1 title (Main branding/identity)
+2. Headers (h2 to h6)
+3. Body text (all other texts)
 
 #### Google Fonts How To
 
@@ -227,13 +230,15 @@ In this section, you format the size of the h1 text, the JAC logo and the negati
 
 #### Examples
 
+Use the following examples as hints of which CSS rules to use. Do not copy them blindly as they probably don't apply to your layout.
+
         header {padding: 2rem;}
 
         #jac-logo {
             width: 100%;
             height: auto;
             display: block;
-            filter: invert(1);
+            filter: invert(1);  /* makes the black svg white if necessary */
             margin: 0rem auto;
         }
 
@@ -501,11 +506,26 @@ See: [https://www.w3schools.com/css/css3_mediaqueries_ex.asp](https://www.w3scho
 ##### The Basic Alignment
 
    @media screen and (min-width: 1024px) {
-    .flex-container {
+    .when .flex-container {
         display: flex;
         /* puts elements side-by-side */
     }
    } /* always comment closing media query */
+
+or
+
+    @media screen and (min-width: 1024px) {
+        .when .flex-container {
+            display: flow-root;
+            /* wraps float */
+        }
+    
+    .when .flex-container picture {
+        float: left;
+        /* puts elements side-by-side */
+        }
+    } /* always comment closing media query */
+
 
 ##### Switching the Items Order
 
@@ -514,14 +534,30 @@ See: [https://www.w3schools.com/css/css3_mediaqueries_ex.asp](https://www.w3scho
         /* places elements in reverse order: last element becomes first */
     }
 
+    or
+
+    .when .flex-container picture {
+        float: right;
+        /* float to opposite side */
+        }
+
 ##### Setting Column Width
 
-    .when p,
+    .when div,
     .when picture,
-    .why p,
+    .why div,
     .why picture {
 	    flex-basis: 50%;
-    }
+    }  /* for flexbox */
+
+or
+    .when div,
+    .when picture,
+    .why div,
+    .why picture {
+	    width: 50%;
+    }  /* for floats */
+
 
 
 #### Using CSS Grid
