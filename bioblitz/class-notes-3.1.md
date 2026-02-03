@@ -8,7 +8,7 @@
                 max-width: 60rem; /* 960px */
                 margin: 0 auto; /* zero top/bottom, centered left/right */
             }
-        }
+        } /* always comment closing media query bracket */
 
 
 ## Quiz on floats next class
