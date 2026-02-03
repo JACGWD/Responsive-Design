@@ -98,7 +98,7 @@ This semester we will be using the HTML 5 picture tag. It provides the means for
 
 ### Replace 5Ws 
 
-Replace the words "why, what, where, when, why and how" with more appealing subtitles. [Compare this page](https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/) with [this page](https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/index-decorated.html).
+Replace the words "who, what, where, when, why and how" with more appealing subtitles. [Compare this page](https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/) with [this page](https://billypoppins.dev.graphicandwebdesign.ca/bioblitz/index-decorated.html).
 
 
 
