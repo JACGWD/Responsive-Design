@@ -312,13 +312,13 @@ ol + p {
 
 
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 60rem) {
   h1 {
     font-size: 4.6em;
   }
 
   .wrapper {
-    max-width: 64rem;
+    max-width: 60rem;
     margin: 0 auto;
     background-color: #fff;
     padding: 2rem;
