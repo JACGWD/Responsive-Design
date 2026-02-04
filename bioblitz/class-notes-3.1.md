@@ -21,8 +21,8 @@
 ## HTML picture tag
 
         <picture>
-            <source media="(orientation: portrait)" srcset="national-cancer-institute-square-unsplash.jpg">
-            <source media="(orientation: landscape)" srcset="national-cancer-institute-landscape-unsplash.jpg">
+            <source media="(orientation: portrait)" srcset="img/national-cancer-institute-square-unsplash.jpg">
+            <source media="(orientation: landscape)" srcset="img/national-cancer-institute-landscape-unsplash.jpg">
 
             <img src="img/national-cancer-institute-Vb0GY3PWSSM-unsplash.jpg" alt="sample artwork">
             <!-- default img tag for browsers that can't understand the source tag -->
