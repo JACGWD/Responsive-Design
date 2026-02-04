@@ -5,10 +5,14 @@
 The first milestone in the BioBlitz project is having a **complete and valid HTML** document. For a template to follow, see the [view-source-billypoppins-bioblitz.html](view-source-billypoppins-bioblitz.html) page.
 
 
+
+
+
+
 ## CSS
 
 - CSS is not expected to be started yet for this evaluation. 
-- Please make sure your reset.css file [../02-floats/floats-page-layout-exercise/css/reset.css](contains this reset v2.5 code).
+- Please make sure your reset.css file <a href="../02-floats/floats-page-layout-exercise/css/reset.css">contains this reset v2.5 code.</a>
 - Add the following code (and fill in the blank) to demonstrate your font choices:
 
         h1 {
