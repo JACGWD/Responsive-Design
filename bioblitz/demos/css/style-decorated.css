@@ -301,10 +301,10 @@ ol + p {
 
 @media screen and (min-width: 950px) {
   .where {
-	background-image: url(img/jac-round.jpg);
-	background-repeat: no-repeat;
-	background-size: 260px;
-	background-position: 87% 100%;
+    background-image: url(img/jac-round.jpg);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: 81% 91%;
 }
 } /* always comment closing media query */
 
@@ -389,7 +389,7 @@ ol + p {
     font-weight: bold;
     position: absolute;
     width: 30rem;
-    left: 36rem;
+    left: 29rem;
     top: 3rem;
     font-size: 1.2rem;
   }

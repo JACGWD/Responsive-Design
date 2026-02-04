@@ -148,14 +148,16 @@ footer a:active {color: rgb(216, 216, 30);}
         display: flex;
     }
 
-    .when .flex-container {
+    .when .flex-container, .who .flex-container {
         flex-direction: row-reverse;
     }
 
     .when p,
     .when picture,
     .why p,
-    .why picture {
+    .why picture,
+    .who picture,
+    .who div {
 	    flex-basis: 50%;
     }
 
