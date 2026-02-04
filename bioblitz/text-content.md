@@ -15,14 +15,16 @@ Any effective communication strategy must answer these five questions otherwise 
 | Where?                                                             | JAC/Ste-Anne                                                |
 | When?                                                              | Date (spring time)                                          |
 | Why?                                                               | Engage students in crowd-sourced scientific data collection |
+| How?                                                               | How does one participate?                                   |
 
 You must find at least five images that will symbolize the answer to these questions:
 
 - Find an image of someone who looks like a JAC student.
-- Find an image of someone participating in the BioBlitz (using a cellphone outside in nature)
+- Find an image that evokes multiple different species (animal and/or botanical)
 - Find an image that evokes Sainte-Anne-de-Bellevue
 - Find an image that evokes spring-time (in southern Quebec)
 - Find an image that engages the reader with science 
+- Find an image of someone participating in the BioBlitz (using a cellphone outside in nature)
 
 
 Get images from [Unsplash](https://www.unsplash.com) that illustrate this. 
