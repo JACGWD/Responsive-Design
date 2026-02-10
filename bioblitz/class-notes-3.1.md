@@ -22,6 +22,7 @@
 
         <picture>
             <source media="(orientation: portrait)" srcset="img/national-cancer-institute-square-unsplash.jpg">
+            
             <source media="(orientation: landscape)" srcset="img/national-cancer-institute-landscape-unsplash.jpg">
 
             <img src="img/national-cancer-institute-Vb0GY3PWSSM-unsplash.jpg" alt="sample artwork">
