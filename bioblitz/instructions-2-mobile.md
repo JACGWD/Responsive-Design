@@ -98,8 +98,11 @@ Add three custom font choices:
 #### The Ideal Line Length
 - [https://baymard.com/blog/line-length-readability](https://baymard.com/blog/line-length-readability)
 
+
+
 #### Line Length in Web vs Print
 - [https://www.viget.com/articles/the-line-length-misconception/](https://www.viget.com/articles/the-line-length-misconception/)
+
 
 #### Examples of CSS for Limiting Line Length
 
@@ -141,7 +144,7 @@ Use the following examples as hints of which CSS rules to use. Do not copy them 
             height: auto;
             display: block;
             filter: invert(1);  /* makes the black svg white if necessary */
-            margin: 0rem auto;
+            margin: 0rem auto;  /* centers the logo */
         }
 
         h1 {
@@ -280,10 +283,22 @@ In this section, define the colors and visual attributes of text links. For exam
 
 ### Example
 
-        header a:link {color: var(--white); text-decoration: none;}
-        header a:visited  {color: var(--yellow);}
-        header a:hover  {text-decoration: underline;}
-        header a:active {color: var(--green);}
+        header a:link {
+            color: var(--white); 
+            text-decoration: none;
+            }
+
+        header a:visited  {
+            color: var(--yellow);
+            }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        header a:active {
+            color: var(--green);
+            }
 
 
 
@@ -329,20 +344,32 @@ Here we space the images away from the text that follows underneath.
 
         picture {
             margin: 0 0 1rem 0;
-            display: block;
+            display: block;  /* by default picture is inline */
         }
 
 
 ## 2.10 Place smartphone logos side by side
 
-        .how .flex-container {
+First, make sure that the two mobile icons are in a div together. Give this div a class of "logos". Also make sure the anchor tags have a class: "android" and "ios" respectively.
+
+        <div class="logos"> 
+            
+            <a class="ios" href="https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8"><img src="img/ios.svg" alt="iOS logo"></a>
+
+            <a class="android" href="https://play.google.com/store/apps/details?id=org.inaturalist.android">
+            <img src="img/GetItOnGooglePlay_Badge_Web_color_English copy.svg" alt="Get it on Google Play logo"></a>
+       
+        </div>
+
+
+        .how .logos {
             display: flex;  /* places the two anchor tags side by side */
             flex-basis: 50%;
         }
 
-        .how .flex-container a {
-            max-width: 50%; /* set the two anchors to act like two columns of 50% width */
-            display: block;
+        .how .logos a {
+            max-width: 50%; /* set the two anchors to act like two columns of 50% width, inside one of the two boxes above */
+            display: block; /* accepts a height and width value */
             margin: 0 auto;
         }
 
