@@ -33,9 +33,21 @@ Add three custom font choices:
 2. Headers (h2 to h6)
 3. Body text (all other texts)
 
+        h1 {
+            font-family:  ;  /* primary visual branding font choice, must echo art style */
+            }
+
+        h2,h3,h4,h5,h6,label,legend {
+            font-family:  ;  /* Must work well with h1 font choice  */
+            }
+
+        body {
+            font-family:  ;  /* must be legible at 16px default font size */
+            }
+
 >
 > ### How to Use Google Fonts
-> See [this Google Fonts tutorial page](./google-fonts.md)
+> See [this Google Fonts tutorial page for a refresher on using fonts from Google](./google-fonts.md)
 > 
 
 ## 2.3 Pick your font sizes for mobile
