@@ -19,6 +19,30 @@
     }        
 
 
+## Padding
+
+We need to make sure that our text content does not touch the edge of the screen. 
+
+        header {
+            padding: 1rem;
+        }
+
+
+        /* use either main or section below, not both  */
+        
+        main  {
+            padding: 1rem; /* this will push every section (and its background color) inwards */
+        }
+
+        section {
+            padding: 1rem; /* lets the background color touch the edge of the screen */
+        }
+
+        footer {
+            padding: 1rem;
+        }
+
+
 ## Place smartphone icons side-by-side
 
 [https://github.com/JACGWD/Responsive-Design/blob/main/bioblitz/instructions-2-mobile.md#210-place-smartphone-logos-side-by-side](https://github.com/JACGWD/Responsive-Design/blob/main/bioblitz/instructions-2-mobile.md#210-place-smartphone-logos-side-by-side)
