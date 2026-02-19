@@ -173,6 +173,7 @@ See [https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-ele
         section.who::before {
             content: " ";  /* the pseudo-element cannot be empty for this trick to work */
             display: block;
+            position: absolute;
             height: 3rem; /* use any size you need */
             width: 100%; /* use any size you need */
             background-image: url(bgimg/photo.jpg);  /* place image in the css/bgimg folder as they are decorative only */
