@@ -207,6 +207,7 @@ Here we give the title and subtitles some basic formatting.
 
         p {
             color: var(--green);
+            background-color: var(--yellow);
             }
 
 
