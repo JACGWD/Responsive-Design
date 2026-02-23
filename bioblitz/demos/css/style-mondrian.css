@@ -251,28 +251,48 @@ picture {
 
 /* START Section 2.10 Place logos side by side  */
 
-.how .flex-container {
-	display: flex;  /* places the two logos side by side */
-	flex-basis: 50%;
-}
-
-.how .flex-container a {
-	max-width: 50%; /* set the two anchors to act like two columns of 50% width */
-	display: block;
-	margin: 0 auto;
+.how .logos {
+	display: flex;  /* places the two logos side by side */	
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .android img {
-	width: 200px;  /* adjust width of android logo */
+	width: 220px;  /* adjust width of android logo */
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .ios img {
-	height: 36px;
+	height: 60px;
 	width: auto;
-	position: relative;
-	top: 8px;
+	margin: 0 auto;
+	display: block;
 }
+
+.how span {
+    display: block;
+    text-align: center;
+}
+
+.ios {
+	position: relative;
+	top: 13px;
+}
+
+.ios span {
+	position: relative;
+	top: 3px;
+}
+
+
+.android span {
+	position: relative;
+	top: -11px;
+}
+
+
 
 /* END Section 2.10 Place logos side by side  */
 
@@ -339,12 +359,12 @@ section.what h2 {
 	top: -3rem;
 }
 
-.ios img {
+/* .ios img {
 	height: 54px;
 	width: auto;
 	position: relative;
 	top: 11px;
-}
+} */
 
 .what div {
 	font-size: 2rem;
@@ -354,6 +374,10 @@ section.what h2 {
 .when h3 {
 	font-size: 460%;
 	text-align: center;
+}
+
+.when .flex-container {
+    flex-direction: row-reverse;
 }
 
 section.why h2 {
@@ -382,6 +406,20 @@ section.how h2 {
 	font-size: 400%;
 	position: relative;
 	top: -2rem;
+}
+
+.how .flex-container {
+    display: block;  /* disable flexbox */
+}
+
+
+.how .flex-container > div, 
+.how picture {
+	width: 50%;  /* set both boxes/columns to 50% */
+}
+
+.how picture {
+	float: right; /* swap logo position with text div */
 }
 
    } /* always comment closing media query */

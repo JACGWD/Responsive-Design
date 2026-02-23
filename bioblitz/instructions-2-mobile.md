@@ -354,35 +354,53 @@ First, make sure that the two mobile icons are in a div together. Give this div 
 
         <div class="logos"> 
             
-            <a class="ios" href="https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8"><img src="img/ios.svg" alt="iOS logo"></a>
+            <h5><a class="ios" href="https://itunes.apple.com/us/app/inaturalist/id421397028?mt=8"><img src="img/ios.svg" alt="iOS logo"></a></h5>
 
-            <a class="android" href="https://play.google.com/store/apps/details?id=org.inaturalist.android">
-            <img src="img/GetItOnGooglePlay_Badge_Web_color_English copy.svg" alt="Get it on Google Play logo"></a>
+           <h5><a class="android" href="https://play.google.com/store/apps/details?id=org.inaturalist.android">
+            <img src="img/GetItOnGooglePlay_Badge_Web_color_English copy.svg" alt="Get it on Google Play logo"></a></h5>
        
         </div>
 
 
-        .how .logos {
-            display: flex;  /* places the two anchor tags side by side */
-            flex-basis: 50%;
-        }
-
-        .how .logos a {
-            max-width: 50%; /* set the two anchors to act like two columns of 50% width, inside one of the two boxes above */
-            display: block; /* accepts a height and width value */
-            margin: 0 auto;
+            .how .logos {
+            display: flex;  /* places the two logos side by side */	
+            justify-content: center;
+            margin-top: 1rem;
         }
 
         .android img {
-            width: 200px;  /* adjust width of android logo */
+            width: 220px;  /* adjust width of android logo */
             height: auto;
+            margin: 0 auto;
+            display: block;
         }
 
         .ios img {
-            height: 36px;  /* adjust height of ios logo */
+            height: 60px; /* adjust height of ios logo */
             width: auto;
-            position: relative;
-            top: 8px;  /* align vertically */
+            margin: 0 auto;
+            display: block;
+        }
+
+        .how span {
+            display: block;  /* force platform names to be on another line */
+            text-align: center;
+        }
+
+        .ios {
+            position: relative;  /* tweak vertical position of ios icon and text */
+            top: 13px;
+        }
+
+        .ios span {
+            position: relative; /* tweak vertical position of ios text */
+            top: 3px;
+        }
+
+
+        .android span {
+            position: relative; /* tweak vertical position of android text */
+            top: -11px;
         }
 
 
