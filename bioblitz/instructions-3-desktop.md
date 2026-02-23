@@ -7,7 +7,7 @@
 
 ## Typography
 
-Since you are now designing for a larger viewport, you can resize your typographic scale so your type has more constrast in size.
+Since you are now designing for a larger viewport, you can resize your [typographic scale](https://spencermortensen.com/articles/typographic-scale/) so your type has more contrast in size.
 
         @media screen and (min-width: 60rem) {
 
@@ -20,6 +20,10 @@ Since you are now designing for a larger viewport, you can resize your typograph
 
 #### The Basic Alignment
 
+> #### Important
+> Use flexbox for: when, why and how
+> 
+
    @media screen and (min-width: 60rem) {
     .when .flex-container {
         display: flex;
@@ -29,6 +33,9 @@ Since you are now designing for a larger viewport, you can resize your typograph
 
 or
 
+> #### Important
+> Use floats for: who, what and where
+> 
     @media screen and (min-width: 60rem) {
         .when .flex-container {
             display: flow-root;
@@ -48,6 +55,10 @@ or
 
 #### Switching the Items Order
 
+> #### Important
+> In the final version of the site, you want the picture to alternate from one side to the other as you go from one section to the other. On one row it will be at left, on the following it will be at right, and so on. 
+>
+
     .when .flex-container {
         flex-direction: row-reverse;
         /* places elements in reverse order: last element becomes first */
@@ -60,7 +71,7 @@ or
         /* float to opposite side */
         }
 
-#### Setting Column Width
+#### Setting Default Column Width
 
     .when div,
     .when picture,
