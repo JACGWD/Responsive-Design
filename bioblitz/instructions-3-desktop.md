@@ -5,6 +5,14 @@
 
 [Read the overview about media queries here](./media-queries.md)
 
+## Typography
+
+Since you are now designing for a larger viewport, you can resize your typographic scale so your type has more constrast in size.
+
+        @media screen and (min-width: 60rem) {
+
+            /* new typographic scale goes here */
+        }
 
 ## Setting elements side-by-side
 
@@ -12,7 +20,7 @@
 
 #### The Basic Alignment
 
-   @media screen and (min-width: 1024px) {
+   @media screen and (min-width: 60rem) {
     .when .flex-container {
         display: flex;
         /* puts elements side-by-side */
@@ -21,7 +29,7 @@
 
 or
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 60rem) {
         .when .flex-container {
             display: flow-root;
             /* wraps float */
@@ -130,19 +138,15 @@ When you have a **single line of text**, you can vertically center it using a li
     }
 
 
-### Flex
-
-Use a media query to make items go side by side using display: flex and display: grid.
-
-See: [https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#setting-elements-side-by-side](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#setting-elements-side-by-side)
-
-### Alternate the position of some items
-
-See: [Flexbox](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#switching-the-items-order) and [CSS Grid](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8b-notes.md#switching-the-items-order-1)
-
 ## Step 9: Add CSS background images
 
-See: [Point 6 on this page](https://github.com/JACGWD/Responsive-Design-Winter-2025/blob/main/week-8-notes.md)
+Use background images to add texture and style to your site.
+
+        body {
+            background-image: url(bgimg/smple.jpg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+        }
 
 
 ## Step 10: Adding Extra Decorative Elements
@@ -169,6 +173,7 @@ See [https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-ele
         section.who::before {
             content: " ";  /* the pseudo-element cannot be empty for this trick to work */
             display: block;
+            position: absolute;
             height: 3rem; /* use any size you need */
             width: 100%; /* use any size you need */
             background-image: url(bgimg/photo.jpg);  /* place image in the css/bgimg folder as they are decorative only */
