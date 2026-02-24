@@ -47,6 +47,7 @@ or
         }
     
     .when .flex-container picture {
+        width: 50%;
         float: left;
         /* puts elements side-by-side */
         }
