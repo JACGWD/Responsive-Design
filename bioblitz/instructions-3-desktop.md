@@ -16,7 +16,7 @@ Since you are now designing for a larger viewport, you can resize your [typograp
 
 ## Setting elements side-by-side
 
-### Using Flex Box
+### Using Flex Box and Floats
 
 #### The Basic Alignment
 
@@ -24,12 +24,12 @@ Since you are now designing for a larger viewport, you can resize your [typograp
 > Use flexbox for: when, why and how
 > 
 
-   @media screen and (min-width: 60rem) {
-    .when .flex-container {
-        display: flex;
-        /* puts elements side-by-side */
-    }
-   } /* always comment closing media query */
+    @media screen and (min-width: 60rem) {
+        .when .flex-container {
+            display: flex;
+            /* puts elements side-by-side */
+        }
+    } /* always comment closing media query */
 
 or
 
