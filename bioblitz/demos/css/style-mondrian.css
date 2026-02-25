@@ -422,4 +422,81 @@ section.how h2 {
 	float: right; /* swap logo position with text div */
 }
 
+
+section h2 {position: relative;}
+
+.when h2:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 6rem;
+    border: 8px solid var(--red);
+    left: -17rem;
+    top: -2rem;
+    background-image: url(img/calendar.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(3px);
+}
+
+.where h2:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 6rem;
+    border: 8px solid var(--green);
+    right: -17rem;
+    top: -2rem;
+    background-image: url(img/pin.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+   background-color: rgba(0, 0, 0, .3);
+   backdrop-filter: blur(3px);
+}
+
+.how h2:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 6rem;
+    border: 8px solid var(--yellow);
+    left: -17rem;
+    top: -2rem;
+    background-image: url(img/smartphone.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(3px);
+}
+
+.why h2:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 6rem;
+    border: 8px solid var(--red);
+    right: -17rem;
+    top: -2rem;
+    background-image: url(img/globe.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(3px);
+}
+
+
+
    } /* always comment closing media query */
