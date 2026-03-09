@@ -4,6 +4,8 @@
 > Use flexbox for: when, why and how
 > 
 > Use floats for: who, what and where
+>
+> **Note:** You only need one media query, placed at the bottom of your stylesheet file.
 
 
         @media screen and (min-width: 60rem) {
@@ -21,6 +23,7 @@
 
             .how .flex-container {
                     display: flex;
+                    flex-direction: row-reverse; /* switches content order, picture is second column */
                 }
 
             .when picture {
@@ -44,11 +47,11 @@
                 }
 
             .what .flex-container {
-                    display: flow-root;  /* wraps float */
+                    display: flow-root;  
                 }
 
             .where .flex-container {
-                    display: flow-root;  /* wraps float */
+                    display: flow-root;  
                 }
 
             .who .flex-container picture {
@@ -57,13 +60,13 @@
                 }
 
             .what .flex-container picture {
-                width: 50%; /* adjust as necessary */
-                float: left; /* puts elements side-by-side */
+                width: 50%; 
+                float: right;  /* switches content order, picture is second column */
                 }
 
             .where .flex-container picture {
-                width: 50%; /* adjust as necessary */
-                float: left; /* puts elements side-by-side */
+                width: 50%; 
+                float: left; 
                 }
 
 
