@@ -1,0 +1,437 @@
+/* COLOR PALETTE */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --green: #2a7e2a;
+  --teal: #60d7c6;
+  --turquoise: #445fa0;
+  --orange: orange;
+  --grey: #444;
+}
+
+
+/* START TYPOGRAPHY */
+
+/* Apply font choice to everything, as everything is a child of body */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.4;  /* leading */
+  color: var(--white);
+  background-color: var(--black);
+}
+
+
+/* Apply font choice to all headers: h1 to h6 */
+h1,h2,h3,h4,h5,h6 {
+font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.1;  /* tighter leading for titles */
+  color: var(--green);
+}
+
+
+/* Apply font scale, based on size of H1 on 320px screen 
+   See: https://spencermortensen.com/articles/typographic-scale/  */
+
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.7243em; }
+h3 { font-size: 2.1205em; }
+h4 { font-size: 1.6505em; }
+h5 { font-size: 1.2847em; }
+p { font-size: 1em; }
+small { font-size: .7784em; }
+
+
+h1 { 
+    margin: 2rem 0 1rem 0;  /* always put more space above than below */
+    text-align: center;
+}
+
+h2 { margin: 2rem 0 1rem 0; }
+h3 { margin: 2rem 0 1rem 0; }
+h4 { margin: 2rem 0 1rem 0; }
+h5 { margin: 2rem 0 1rem 0; }
+
+p { margin: 0 0 1rem 0; } /* paragraphs only skip one line after */
+
+small { margin: 2rem 0 1rem 0;}
+
+
+
+.gwd h2 {
+    font-size: 2.5rem; /* slightly smaller so it fits on one line */
+}
+
+/* END TYPOGRAPHY */
+
+
+
+
+
+
+
+/* START CONTROL TYPOGRAPHIC PAIRS 
+
+In CSS, + means "follows" as in the H3 follows (comes after / is a sibling of) the h2
+:has() is a test to see if a tag (ex: h2) HAS a sibling (ex: h3) that follows (+) it: h2:has(+ h3)
+
+*/
+
+h2:has(+ h3) { margin: 2rem 0 0rem 0;}
+/* control h2 margins only when followed by h3 */
+
+
+h2 + h3 { margin: 0 0 1rem 0;}
+/* control h3 margins only when h2 comes before it */
+
+
+/* END CONTROL TYPOGRAPHIC PAIRS */
+
+
+
+
+
+
+
+/* START FORMATTING BASIC BOXES */
+
+.wrapper {
+    padding: 0.5rem;  /* white outer margin so nothing touches the edge of the phone */
+}
+
+section {
+    margin: 0 0 5rem 0;  /* Space sections far away from each other, so easy to tell them apart */
+}
+
+.logos .two {
+    width: 100%;
+    background-color: var(--teal);
+    padding: 1rem;
+}
+
+/* END FORMATTING BASIC BOXES */
+
+
+
+
+
+
+
+
+
+/* ========== START MAC MARKET LOGO ========== */
+
+/* FLOATS see: https://www.w3schools.com/cssref/pr_class_float.php 
+
+FLOATS are fun, but they can break page layouts easily. (They break the css box model stacking order.)
+Good for insetting an image in a paragraph like this. But use flexbox or grid for setting things side by side in page layouts instead of floats.
+
+*/
+
+.macmarket .one img, /* two selectors separated by a comma, for a single set of style rules */
+.fblink {
+    float: left;
+    width: 25%;
+    margin: 0 0.5rem 1rem 0;
+}
+
+.fblink {margin: 0.5rem 0.5rem 0 0}
+
+.macmarket .two p:last-child {
+    border: 1px solid var(--turquoise);  /* make the last paragraph look like a box */
+    padding: 0.5rem;
+    display: flow-root;
+}
+
+/* ========== END MAC MARKET LOGO ========== */
+
+
+
+
+
+
+
+
+    
+/* +++++++++++++ START FORMAT SPONSOR LOGOS +++++++++++++ */
+
+/* REMEMBER TO DO THIS PART AT 320px */
+
+
+
+
+
+#jac-logo {
+        display: block; /* allows element to be given width and height */
+        
+        width: 15rem; /* set size in one direction, set the other to auto */
+        height: auto;
+        filter: invert();
+        margin: 1rem auto;  /* auto left/right centers */
+    } 
+
+
+/* +++++++++++++ END FORMAT SPONSOR LOGOS +++++++++++++ */    
+
+
+
+
+
+    
+
+
+/* ======== FORMAT UNITED NATIONS LOGOS OPTION 1  ======== */
+
+.earthday .flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    width:95vw;
+    margin: 0.75rem auto;
+    max-width: 500px;
+}
+
+
+
+
+
+/* +++++++++++++ START TRANSPLANT SECTION +++++++++++++ */    
+
+.transplant .two {
+    border: 4px solid var(--orange);
+    padding: 1rem;
+    margin: 5rem 0;
+}
+
+.transplant .two h3 {
+    color: var(--orange);
+    margin: 0.5rem;
+}
+
+.transplant .two h3:first-child {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--grey);
+}
+
+.transplant .two h3:nth-child(2) {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    
+    border-top: 3px solid var(--orange);
+    padding-top: 1rem;
+    
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 1rem;
+}
+
+.transplant .two h3:nth-child(3) {
+    font-size: 2.5rem;
+    text-align: right;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--orange);
+    position: relative;
+}
+
+.transplant .two h3:nth-child(3):before {
+
+    content: " "; 
+    /* content cannot be empty, otherwise box collapses to no height */
+
+
+    position: absolute;   
+    /* position anywhere you like, on a layer */
+    /* could also be "relative" for different behaviour */
+
+    z-index: 1;
+    /* control stacking like "send to back" */
+    /* can be any negative (send to back) or positive (send to front) number, 
+    ex: 99 is the 99th layer above the background */
+
+    display: block;
+    /* behave as normal block level element */
+
+    background-image: url(../img/finger.svg);
+    /* select image: path points from the css file to the image file */
+
+    background-repeat: no-repeat;
+    /* by default, backgrounds repeat to fill up the entire space */
+
+    background-size: cover; 
+    /* or "contain", or a size expressed in em, rem, %, px, etc */
+    
+    width: 3rem;
+    height: 3rem;
+    /* control size explicitly in em, rem, %, px, etc */
+
+    top: 0rem; 
+    /* match height of pseudo-element to move it above top edge of parent */
+
+   right: 20ch;
+    /* align left of text */
+
+    rotate: 90deg;
+
+    /* border: 1px solid red; */
+}
+
+/* +++++++++++++ END TRANSPLANT SECTION +++++++++++++ */    
+
+
+
+
+footer {
+    color: var(--white);
+    background-color: var(--turquoise);
+    padding: 1rem;
+    text-align: center;
+    font-size: small;
+}
+
+footer span.gwd{
+   color: orange;
+}
+
+
+
+@media screen and (min-width: 60rem) {
+
+body {
+	background-image: url(bgimg/pexels-pixabay-87651.jpg);
+	background-repeat: no-repeat;
+    background-size: 34%;
+   background-position-y: 88rem;
+    background-position-x: 51rem;
+}  
+
+#jac-logo {
+	width: 32rem;
+}
+
+h1 {
+	font-size: 12.5em;
+}
+
+.macmarket .one img /* two selectors separated by a comma, for a single set of style rules */ {
+    float: unset;
+}
+
+.wrapper {
+    margin: 0 104.13px; /* 14 columns wide, one column at left and right */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+     grid-template-rows: repeat(5, 650px); /* five sections */
+    gap: 2rem;
+}
+
+.giveaway {
+    grid-row: 1/4;
+    grid-column: 1/8;
+  }
+
+.gwd {
+    grid-column: 8/13;
+    grid-row: 1/3;
+}
+
+
+
+.transplant {
+    grid-column: 2/12;
+    grid-row: 4/6;
+    padding: 1rem;
+    border: 2px solid var(--grey);
+    box-shadow: 2px 2px 2px var(--grey);
+
+}
+
+.earthday {
+    grid-column: 13/15;
+    grid-row: 1/6;
+    width: 67.5%;
+}
+
+.logos {
+    grid-column: 1/13;
+   grid-row: 5/6;
+}
+
+.earthday .flex-container {
+    width: 100%;
+    margin: 0 0 0 4.3rem;
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    height: 173.2rem;
+    justify-content: space-between;
+}
+
+
+.earthday h3 {
+    width: 149%;
+    text-align: end;
+}
+.earthday h2 {
+    text-align: end;
+    width: 149%;
+}
+
+
+.logos .two img {
+    width: 100%;
+}
+
+.logos .two {
+    width: 100%;
+    background-color: var(--teal);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+  .macmarket {
+    grid-column: 1/12;
+   grid-row: 2/3;
+  }
+
+  .transplant {
+    grid-row: 3/4;
+  }
+
+
+.macmarket .one img {
+  width: 87%;
+}
+
+.fblink {
+  width: 13%;
+}
+
+.macmarket .column.one {
+  float: left;
+  width: 489px;
+}
+
+.macmarket .flex-container {
+  display: flow-root;
+}
+
+.fblink img {
+  width: 6rem;
+}
+}
