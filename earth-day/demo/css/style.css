@@ -303,7 +303,38 @@ footer span.gwd{
 
 
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 60rem) and (max-width: 116.999rem) {
+    .wrapper {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .logos .two {
+    width: 100%;
+    background-color: var(--teal);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos .two img {
+    width: 100%;
+}
+
+.earthday .flex-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.75rem;
+    margin: 0.75rem auto;
+    width: 100%;
+    max-width: unset;
+}
+}
+
+
+
+@media screen and (min-width: 117rem) {
 
 body {
 	background-image: url(bgimg/pexels-pixabay-87651.jpg);

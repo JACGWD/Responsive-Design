@@ -25,8 +25,8 @@ As in previous exercises, we will follow the proper mobile first workflow:
 - Use a typographic scale
 - Use Google fonts
 - Define a color palette using CSS variables
-- Use a media query at 60rem
-- Use a combination of CSS Grid and Flexbox for page layout
+- Use a media query at 60rem for tablets
+- Use a combination of CSS Grid and Flexbox for page layout for desktop
 
 
 ## Ponderation
