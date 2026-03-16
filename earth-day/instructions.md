@@ -1,0 +1,34 @@
+# Earth Day Project
+
+## Objective
+
+Create a single web page that promotes the GWD Brandywine Tomato Transplant Give Away event, as well as promote awareness of Earth Day.
+
+## Theme
+
+For this project, you will select a **climate** as the visual theme for the design.
+
+- Tropical (ex: jungle, dark greens)
+- Dry (ex: desert, beige and tan)
+- Temperate (ex: green and lush, yellow green)
+- Continental (ex: extreme temperature variation between summer and winter, yellow and blue)
+- Polar (ex: extreme cold, white and blue)
+
+See this page for an [overview of the different types of climates.](https://www.nesdis.noaa.gov/about/k-12-education/understanding-our-planet/what-are-the-different-climate-types)
+
+
+## Technique
+
+As in previous exercises, we will follow the proper mobile first workflow:
+
+- Design single column view first
+- Use a typographic scale
+- Use Google fonts
+- Define a color palette using CSS variables
+- Use a media query at 60rem
+- Use a combination of CSS Grid and Flexbox for page layout
+
+
+## Ponderation
+
+Read the [evaluation criteria](./ponderation.md).
