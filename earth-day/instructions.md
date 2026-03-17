@@ -22,9 +22,9 @@ See this page for an [overview of the different types of climates.](https://www.
 As in previous exercises, we will follow the proper mobile first workflow:
 
 - Design single column view first
-- Use a typographic scale
-- Use Google fonts
-- Define a color palette using CSS variables
+- Use a [typographic scale](https://spencermortensen.com/articles/typographic-scale/)
+- Use [Google fonts](https://fonts.google.com/)
+- Define a color palette using [CSS variables](https://www.w3schools.com/css/css3_variables.asp)
 - Use a media query at 60rem for tablets
 - Use a combination of CSS Grid and Flexbox for page layout for desktop
 
