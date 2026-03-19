@@ -32,3 +32,8 @@ As in previous exercises, we will follow the proper mobile first workflow:
 ## Ponderation
 
 Read the [evaluation criteria](./ponderation.md).
+
+
+## Start the project
+
+Read the ["mobile first" page to start the project](./mobile-first.md)
