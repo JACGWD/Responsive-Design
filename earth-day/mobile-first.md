@@ -3,7 +3,7 @@
 ## The proper way to start a web project
 
 1. Choose a visual theme based on climate
-2. Choose your fonts at [Google fonts](https://fonts.google.com/) or Adobe
+2. Choose your fonts at [Google fonts](https://fonts.google.com/) or [Adobe](https://fonts.adobe.com/)
 3. Add a [typographic scale](https://spencermortensen.com/articles/typographic-scale/)
 4. Define a color palette using [CSS variables](https://www.w3schools.com/css/css3_variables.asp)
 5. Extract colors from images at [https://color.adobe.com/create/image](https://color.adobe.com/create/image) 
