@@ -109,7 +109,17 @@ If you assign a dark background color to the .logos container, you will want to 
         .logos .two li:nth-child(4) img {
             filter: none !important;
         }
-        
+
+### Set width of logos
+
+
+        .logos .two li {
+            margin: 1rem auto; /* margin for all logos */
+        }
+
+        .logos .two li:nth-child(1) {
+            width: 80%;  /* width for first logo */
+        }
 
  ## Continue to the first media query
 
