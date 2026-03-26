@@ -132,10 +132,6 @@ To layout and align the logos we will use flexbox.
 You will likely want to tweak the sizes of the logos once the layout is working.
 
 
-        .logos .two li {
-            margin: 0.25rem; /* margin for all logos, adjust to taste */
-        }
-
         .logos .two li:nth-child(1) {
             width: 80%;  /* width for first logo, adjust to taste */
         }
