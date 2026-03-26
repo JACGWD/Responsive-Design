@@ -23,13 +23,13 @@ We want to minimize the visual importance of the 17 UN icons so we will display 
 
 ### Edit JAC logo
 
-We want to be able to control both instances of the JAC logo with one CSS rule. If we have two IDs with the same name we will get a validation error. So we will use a class. We will change the JAC ID to a class from this:
+We want to be able to control both instances of the JAC logo with one CSS rule. If we have two IDs with the same name we will get a validation error. So we will add a class. We will add a class to the JAC ID like this:
 
         <img src="img/Logo_JAC-Horiz_K.svg" alt="John Abbott College logo" id="jac-logo">
 
 to this:
 
-        <img src="img/Logo_JAC-Horiz_K.svg" alt="John Abbott College logo" class="jac-logo">
+        <img src="img/Logo_JAC-Horiz_K.svg" alt="John Abbott College logo" id="jac-logo" class="logo">
 
 Then find the JAC logo in the .logos section and add the missing class there too.
 
@@ -37,7 +37,7 @@ Then find the JAC logo in the .logos section and add the missing class there too
 
 to
 
-        <li><img src="img/Logo_JAC-Horiz_K.svg" alt="John Abbott College Logo"  class="jac-logo"></li>
+        <li><img src="img/Logo_JAC-Horiz_K.svg" alt="John Abbott College Logo"  class="logo"></li>
 
 
 
@@ -110,16 +110,41 @@ If you assign a dark background color to the .logos container, you will want to 
             filter: none !important;
         }
 
+
+### Align the logos
+
+To layout and align the logos we will use flexbox.
+
+        .logos .two {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around; /* experiment with the flexbox editor in Chrome/Edge */
+            flex-direction: row;  /* can be set to column */
+        }
+
+        .logos .two li {
+            width: 15%;  /* adjust to taste */
+        }
+
+
 ### Set width of logos
+
+You will likely want to tweak the sizes of the logos once the layout is working.
 
 
         .logos .two li {
-            margin: 1rem auto; /* margin for all logos */
+            margin: 0.25rem; /* margin for all logos, adjust to taste */
         }
 
         .logos .two li:nth-child(1) {
-            width: 80%;  /* width for first logo */
+            width: 80%;  /* width for first logo, adjust to taste */
         }
+
+        .logos .two li:nth-child(4) {
+            width: 67%;  /* width for fourth logo, adjust to taste */
+        }
+
+##         
 
  ## Continue to the first media query
 
