@@ -140,6 +140,27 @@ You will likely want to tweak the sizes of the logos once the layout is working.
             width: 67%;  /* width for fourth logo, adjust to taste */
         }
 
+#### Align and center in flexbox column
+
+        .logos .two {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logos li {
+            width: 100%; /* set default width of logos so they appear on screen */
+        }
+
+        .logos .two li:nth-child(2) {
+            width: 50%; /* more specific "powerful" width rule wins */
+            margin: 0 auto;
+        }
+
 ##         
 
  ## Continue to the first media query
