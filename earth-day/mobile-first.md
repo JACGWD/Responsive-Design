@@ -94,7 +94,21 @@ to
             padding: 1rem;
         }
 
+### Minimize the MacMarket logos
 
+picture.column.one {
+    width: 10rem;
+    display: block;
+    float: left;
+    margin-right: 1rem;
+}
+
+.fblink {
+    width: 6rem;
+    display: block;
+    float: right;
+    margin-left: 1rem;
+}
 
 
 ### Invert the logos if necessary
