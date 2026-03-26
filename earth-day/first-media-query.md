@@ -30,9 +30,9 @@ We will leave the sections at 100% width (possibly with a tiny margin). But we w
         border-radius: 4rem;  /* optional */
         }
 
-        .earthday .flex-container {
-            grid-template-columns: repeat(6, 1fr);  /* 6 columns of 1fr each */
-            /* because we are on a bigger screen, we can reduce the size of the icons */
+    .earthday .flex-container {
+        grid-template-columns: repeat(6, 1fr);  /* 6 columns of 1fr each */
+        /* because we are on a bigger screen, we can reduce the size of the icons */
         }
 
     
