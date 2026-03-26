@@ -119,28 +119,16 @@ To layout and align the logos we will use flexbox.
             padding: 1rem;
             display: flex;
             justify-content: space-around; /* experiment with the flexbox editor in Chrome/Edge */
-            flex-direction: row;  /* can be set to column */
+            flex-direction: row;  /* can be set to column, see below */
         }
 
         .logos .two li {
-            width: 15%;  /* adjust to taste */
+            width: 15%;  /* adjust to taste: for row only */
         }
 
+### Align and center in flexbox column
 
-### Set width of logos
-
-You will likely want to tweak the sizes of the logos once the layout is working.
-
-
-        .logos .two li:nth-child(1) {
-            width: 80%;  /* width for first logo, adjust to taste */
-        }
-
-        .logos .two li:nth-child(4) {
-            width: 67%;  /* width for fourth logo, adjust to taste */
-        }
-
-#### Align and center in flexbox column
+Considering the narrow space of a smartphone, displaying the icons in a column is preferable. 
 
         .logos .two {
             padding: 1rem;
@@ -161,7 +149,20 @@ You will likely want to tweak the sizes of the logos once the layout is working.
             margin: 0 auto;
         }
 
-##         
+
+### Tweak the width of the logos
+
+You will likely want to tweak the sizes of the logos once the layout is working.
+
+
+        .logos .two li:nth-child(1) {
+            width: 80%;  /* width for first logo, adjust to taste */
+        }
+
+        .logos .two li:nth-child(4) {
+            width: 67%;  /* width for fourth logo, adjust to taste */
+        }
+       
 
  ## Continue to the first media query
 
