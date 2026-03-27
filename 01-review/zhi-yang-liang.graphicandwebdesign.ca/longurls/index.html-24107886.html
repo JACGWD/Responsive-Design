@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Abbott College Bioblitz</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.5; background-color: rgb(33, 83, 91); }
+   
+  </style>
+
+ 
+  <style>
+    body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 90rem;
+  height: 4000px;
+  background: url('img/bgnew2.webp') repeat center top;
+  background-size: cover;
+  z-index: -1;
+}
+.banner-container {
+  position: relative;
+}
+
+.header-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.earth-globe {
+  position: absolute;
+  top: 33%;         
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 34%;     
+  animation: rotateEarth 40s linear infinite;
+  z-index: 2;
+}
+
+@keyframes rotateEarth {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+    .wrapper {
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header-banner {
+      width: 100%;
+      border: 0.5rem solid #0b1f34;
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    p{color: #d3d3d3;}
+
+    .banner-title {
+margin-top: 32px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2rem, 8vw, 8rem); 
+  color: white;
+}
+.banner-subtitle {
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(2rem, 9vw, 8rem); 
+  color: white;
+  margin-top: -50px;
+  padding-top: 24px;
+}
+
+
+    #jac-logo {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      z-index: 3;
+      background: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    section {
+      background-color: rgba(0, 25, 48, 0.8);
+      margin-bottom: 3rem;
+      padding: 2rem 1rem;
+    }
+
+    section h3, section h2 {
+      font-family: 'Yeseva One', serif;
+      font-size: 2rem;
+      color: rgb(231, 151, 39);
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    section h2 {
+      font-size: 1.25rem;
+      color: white;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .flex-container > .column {
+      flex: 1;
+    }
+
+    .column img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .column.two p {
+      padding: 0 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .flex-container {
+        flex-direction: row;
+        align-items: center;
+      }
+      .column.one img {
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #001225;
+      color: white;
+    }
+      .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .logo-grid img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .logo-grid img {
+  background-color: white;     
+  padding: 0.5rem;            
+  border-radius: 8px;         
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 1rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.earthday {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .earthday img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .earthday img {
+  background-color: white;    
+  padding: 0.3rem;             
+  border-radius: 8px;          
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  border-radius: 8px;
+  margin: 0.5rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.earthday-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem;
+  max-width: 1200px;   
+  margin: 0 auto;      
+  padding: 1rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="banner-container">
+      <img src="img/header.png" alt="Header Banner" class="header-banner">
+      <img src="img/earth.png" alt="Rotating Earth" class="earth-globe">
+      
+      <div class="banner-text">
+        <h1 class="banner-title">EarthDay</h1>
+        <h1 class="banner-subtitle">2026</h1>
+      </div>
+    
+      <img src="John Abbott College Bioblitz_files/JAC-Logo_BW.svg" alt="Logo" id="jac-logo">
+    </header>
+    <main>
+      <section class="giveaway">
+        <h3>Brandywine Tomato</h3>
+        <h2>Transplant Give Away</h2>
+        <div class="flex-container">
+          <div class="column one">
+            <img src="img/giveawayoriginal.jpeg" alt="Giveaway Image">
+          </div>
+          <div class="column two">
+            <p>Engaging with the local community and providing the opportunity to connect with nature was the main objective in celebration of Earth Day 2026.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="macmarket">
+        <div class="section-header">
+          <h3>Mac Market</h3>
+          <div class="section-icons">
+            <a href="https://www.facebook.com/MarcheMacMarket/">
+              <img src="img/facebook.svg" alt="Facebook" class="facebook-icon" />
+            </a>
+            <img src="img/macmarket.png" alt="Mac Market Logo" class="macmarket-logo">
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="column one">
+            <img src="img/Earth Day event Gallery.002.jpeg" alt="Mac Market Image" />
+          </div>
+          <div class="column two">
+            <p>The Mac Market, located on the McGill/Macdonald campus, supports local produce and student gardens through programs like McGill feeding McGill.</p>
+            <p>We promote Mac Market's support on campus and through their Facebook page "Marché Mac Market".</p>
+          </div>
+        </div>
+      </section>
+      <section class="gwd">
+        <h3>Graphic and Web design</h3>
+        <div class="flex-container">
+          <div class="column one">
+            <img src="img/Earth Day event Gallery.003.jpeg" alt="gwd">
+          </div>
+          <div class="column two">
+            <p>GWD students not only created event 'Transplants' posters but were on-hand to transplant the seedlings into compost pots and distributed them to the Earth Day attendees. Graphic & Web Design Students also created promotion material, signage & assisted in the distribution of 300 tomato seedling transplants on Earth Day 2024.</p>
+            <p>They also demonstrated to attendees how to up-cycle used plastic water bottles into useful sub-irrigation planters.</p>
+
+          </div>
+        </div>
+      </section>
+      <section class="transplant">
+        <h3>Transplant a tomato seedling!</h3>
+        <h2>Jiffy pots also available</h2>
+        <div class="flex-container">
+          <div class="column one">
+            <img src="img/Earth Day event Gallery.004.jpeg" alt="Giveaway Image">
+          </div>
+          <div class="column two">
+            <p>Learn how to up-cycle into a sub-irrigation planter</p>
+            <p> In the AGORA</p>
+            <p> April 22, 2026 10am - 2pm</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="logos">
+        <div class="logo-wrapper">
+          <h3>Brought to You By</h3>
+          <div class="logo-grid">
+            <img src="img/Logo_JAC-Horiz_RGB_blanc.svg" alt="John Abbott College">
+            <img src="img/GWD-logo-v2.svg" alt="Graphic &amp; Web Design">
+            <img src="img/EDO-Logo.svg" alt="Earth Day">
+            <img src="img/McGill_University-Logo.wine.svg" alt="McGill">
+            <img src="img/EDC_logo_b_rgb.svg" alt="Earth Day Canada">
+          </div>
+        </div>
+      </section>
+
+      <section class="earthday">
+        <h3>Earth Day 2026</h3>
+        <h2>This Event Aligns With The United Nations Sustainable Development Goals</h2>
+        <div class="earthday-grid">
+            <img src="img/E-WEB-Goal-01.png" alt="UN Sustainability Goal Icon #1">
+            <img src="img/E-WEB-Goal-02.png" alt="UN Sustainability Goal Icon #2">
+            <img src="img/E-WEB-Goal-03.png" alt="UN Sustainability Goal Icon #3">
+            <img src="img/E-WEB-Goal-04.png" alt="UN Sustainability Goal Icon #4">
+            <img src="img/E-WEB-Goal-05.png" alt="UN Sustainability Goal Icon #5">
+            <img src="img/E-WEB-Goal-06.png" alt="UN Sustainability Goal Icon #6">
+            <img src="img/E-WEB-Goal-07.png" alt="UN Sustainability Goal Icon #7">
+            <img src="img/E-WEB-Goal-08.png" alt="UN Sustainability Goal Icon #8">
+            <img src="img/E-WEB-Goal-09.png" alt="UN Sustainability Goal Icon #9">
+            <img src="img/E-WEB-Goal-10.png" alt="UN Sustainability Goal Icon #10">
+            <img src="img/E-WEB-Goal-11.png" alt="UN Sustainability Goal Icon #11">
+            <img src="img/E-WEB-Goal-12.png" alt="UN Sustainability Goal Icon #12">
+            <img src="img/E-WEB-Goal-13.png" alt="UN Sustainability Goal Icon #13">
+            <img src="img/E-WEB-Goal-14.png" alt="UN Sustainability Goal Icon #14">
+            <img src="img/E-WEB-Goal-15.png" alt="UN Sustainability Goal Icon #15">
+            <img src="img/E-WEB-Goal-16.png" alt="UN Sustainability Goal Icon #16">
+            <img src="img/E-WEB-Goal-17.png" alt="UN Sustainability Goal Icon #17">
+        </div>
+    </section>
+    </main>
+
+    <footer>
+      &copy;  Zhiyang Liang, for the John Abbott College Graphic & Web Design department, 2026
+    </footer>
+  </div>
+</body>
+</html>
