@@ -363,7 +363,7 @@ h1 {
 main {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-     grid-template-rows: repeat(5, 650px); /* five sections */
+    grid-template-rows: repeat(5, 650px); /* five sections */
     gap: 2rem;
 }
 

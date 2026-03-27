@@ -35,5 +35,7 @@ We will leave the sections at 100% width (possibly with a tiny margin). But we w
         /* because we are on a bigger screen, we can reduce the size of the icons */
         }
 
-    
+    ## Second Media Query
+
+    Proceed to the next phase: [Designing for desktop scale using CSS Grid](./second-media-query.md)
 
