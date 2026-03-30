@@ -45,7 +45,7 @@ What you need to find out:
         main {
             display: grid;
             grid-template-columns: repeat(16, 1fr); /* 16 columns each equal to one fraction of the available space */
-            grid-template-rows: repeat(8, auto); /* 5 rows for 5 sections, some double height */
+            grid-template-rows: repeat(4, auto); /* 4 rows for 4 sections */
             gap: 2rem;  /* both row and column gap */
         }
 
@@ -56,7 +56,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
   
 
-5. Note that the page layout will be all out of proportion until all the elements are placed on the grid. So we will temporarily hide all but one section to make it easier to work with:
+1. Note that the page layout will be all out of proportion until all the elements are placed on the grid. So we will temporarily hide all but one section to make it easier to work with:
 
         .gwd,
         .earthday,
@@ -76,7 +76,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
         } 
 
 
-7. Place an element on the grid
+7. Place an element on the grid as row one
 
     To place an element on the grid you need to define the starting point: an intersection of a column and a row; and the end point: another intersection of a column and row.
 
@@ -102,7 +102,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
         .earthday {
              grid-column: 13/16;
-             grid-row: 1/8;  /* full height on the grid */
+             grid-row: 1/4;  /* full height on the grid */
          }
 
 
@@ -110,7 +110,6 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
             grid-template-columns: 1fr;
             padding: 1rem;
             margin: 0 auto;
-            width: 50%; /* change width to make overall logo column height less */
         }
 
 
@@ -123,11 +122,11 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
         }       
 
 
-10. Place .gwd on the grid        
+10. Place .gwd on the grid as row 2      
 
         .gwd {
              grid-column: 2/8;
-             grid-row: 2/5;
+             grid-row: 2/2;
          }
 
         .gwd h1,
@@ -145,15 +144,28 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
         }
 
 
-13. Place .transplant on the grid        
+13. Place .transplant on the grid as the second column of row 2      
 
         .transplant {
             grid-column: 8/13;
-            grid-row: 2/5;
+            grid-row: 2/2;
             padding: 1rem;
          }
 
-14. Prepare the .logos for absolute positioning
+14. Remove .logos from the hidden div list:
+
+        .giveaway {
+            display: none;
+        }
+    
+15. Place .logos on the grid as row 3
+
+        .logos {
+            grid-column: 2/13;
+            grid-row: 3/3;
+        }
+
+16. Prepare the .logos for absolute positioning
 
         .logos {
             position: relative;
@@ -195,3 +207,40 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
             width: 10rem;
         }
         
+16. Delete the entire display none rule
+
+        .giveaway {
+            display: none;
+        }
+    
+17. Place .giveaway on the grid as row 4
+
+        .giveaway {
+            grid-column: 2/13;
+            grid-row: 4/4;
+        }
+
+
+18. Reduce the size of the UN icons as necessary
+
+The CSS Grid will automatically expand to hold all the icons at their normal size. We can reduce their width to shorten the column so it matches the rest of the layout.
+
+        .earthday .flex-container {
+            grid-template-columns: 1fr;
+            width: 60%;  /* reduce size of icons */
+            margin: 0 auto;  /* center in column */
+        }
+
+
+19. Define proper row heights
+
+Now that the elements are placed on the grid, you can assign specific row heights to avoid any overly tall/empty rows.
+
+To do this, edit the main tag, and add a rem value for each row starting with the first.
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: 33rem 50rem 20rem 30rem;
+            gap: 2rem;
+        }
