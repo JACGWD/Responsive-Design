@@ -45,7 +45,7 @@ What you need to find out:
         main {
             display: grid;
             grid-template-columns: repeat(16, 1fr); /* 16 columns each equal to one fraction of the available space */
-            grid-template-rows: repeat(4, auto); /* 4 rows for 4 sections */
+            grid-template-rows: repeat(4, minmax(40px, auto)); /* 4 rows for 4 sections */
             gap: 2rem;  /* both row and column gap */
         }
 
@@ -232,9 +232,9 @@ The CSS Grid will automatically expand to hold all the icons at their normal siz
         }
 
 
-19. Define proper row heights
+19. Define proper row heights (optional)
 
-Now that the elements are placed on the grid, you can assign specific row heights to avoid any overly tall/empty rows.
+Now that the elements are placed on the grid, you may want to assign specific row heights to avoid any overly tall/empty rows due to them being automatically expanded.
 
 To do this, edit the main tag, and add a rem value for each row starting with the first.
 
