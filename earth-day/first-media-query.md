@@ -3,7 +3,7 @@
 Add the first media query. We will use a breakpoint of 60rem (960px):
 
 
-        @media screen and (min-width: 60rem) {
+        @media screen and (min-width: 60rem) and (max-width: 89.9999rem) {
 
         } /* close media query */
 
