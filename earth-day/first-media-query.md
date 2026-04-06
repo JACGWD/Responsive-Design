@@ -14,26 +14,38 @@ In this exercise, we will not use the wrapper div to constrain the content to a 
 
 We will leave the sections at 100% width (possibly with a tiny margin). But we will center the content with a large amount of padding, still giving us a 60rem wide content area.
 
-        
 
+
+      @media screen and (min-width: 60rem) and (max-width: 89.9999rem) {
+        /* this media query for tablet size only: 960-1440px */
+        
+        section {
+                padding-left: calc(50% - (60rem / 2));
+                padding-right: calc(50% - (60rem / 2));
+
+                margin: 2rem; /* optional */
+                border-radius: 4rem;  /* optional */
+                }
+
+        } /* close media query */   
+
+ 
+ 
+ @media screen and (min-width: 60rem) { 
+    /* this media query for all screens greater than 960px */  
+    
     header img {
         max-width: 40rem; /* limit the width of the JAC logo */
         display: block;
         margin: 0 auto;
     }
 
-    section {
-        padding-left: calc(50% - (60rem / 2));
-        padding-right: calc(50% - (60rem / 2));
-
-        margin: 2rem; /* optional */
-        border-radius: 4rem;  /* optional */
-        }
-
     .earthday .flex-container {
         grid-template-columns: repeat(6, 1fr);  /* 6 columns of 1fr each */
         /* because we are on a bigger screen, we can reduce the size of the icons */
         }
+
+        } /* close media query */  
 
     ## Second Media Query
 
