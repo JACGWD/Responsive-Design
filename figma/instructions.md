@@ -9,6 +9,7 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Responsive design: mobile and desktop
 - Dark mode enabled for energy saving
 - "Hydro powered" web hosting slogan in the footer 
+- Design is presented as a working prototype
 
 
 ## Technical Requirements
@@ -18,7 +19,7 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Small mobile design
 - Desktop design
 
-### Required Pages
+### Required Pages in Figma
 
 - Home page
 - Basic page template
@@ -26,13 +27,30 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Contact form with "message sent" overlay micro-animation  (based on basic page)
 - Thank you page (based on basic page)
 
+### Pages to include in Navigation
+
+- Home
+- About
+- Blog
+- Recycle
+- Reuse
+- Materials
+- Composting
+- Contact
+- Contact thank you page
+
+
+
 ### Technical Requirements
 
 - Base font is 1rem/16px
+- Font sizes are based on the typographic scale
 - H1 is no taller than 2.5rem/40px on mobile
-- Main content are is 60rem/960px
+- Main content area is 60rem/960px wide
 - Colors are saved in a palette in Figma
 - Font styles are saved in Figma
+- Home screen has a full screen background image on mobile
+- Hamburger menu icon and pop-up navigation screen
 
 ## UI/UX Design Software
 
