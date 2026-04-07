@@ -32,6 +32,7 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Home
 - About
 - Blog
+- Gallery
 - Recycle
 - Reuse
 - Materials
@@ -40,6 +41,13 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Contact thank you page
 
 
+### Blog header
+
+At the top of each article listed on the blog page, include the following information:
+
+1. Title of the blog post
+2. Author name ("by John Smith")
+3. "Published on" date
 
 ### Technical Requirements
 
@@ -51,6 +59,8 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Font styles are saved in Figma
 - Home screen has a full screen background image on mobile
 - Hamburger menu icon and pop-up navigation screen
+- Search field
+- Weekly opening hours
 
 ## UI/UX Design Software
 
