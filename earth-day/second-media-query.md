@@ -83,7 +83,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
         .macmarket {
             grid-column: 2/13;
-            grid-row: 1/1;
+            grid-row: 1/2;
             padding: 1rem 8.5% 2rem 8.5%;  /* note that percentages scale better when the window width changes */
             }
 
@@ -126,7 +126,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
         .gwd {
              grid-column: 2/8;
-             grid-row: 2/2;
+             grid-row: 2/3;
          }
 
         .gwd h1,
@@ -148,7 +148,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
         .transplant {
             grid-column: 8/13;
-            grid-row: 2/2;
+            grid-row: 2/3;
             padding: 1rem;
          }
 
@@ -162,7 +162,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
         .logos {
             grid-column: 2/13;
-            grid-row: 3/3;
+            grid-row: 3/4;
         }
 
 16. Prepare the .logos for absolute positioning
@@ -217,7 +217,7 @@ Now that we have defined the grid, we can see it in the browser. Note that the c
 
         .giveaway {
             grid-column: 2/13;
-            grid-row: 4/4;
+            grid-row: 4/5;
         }
 
 
