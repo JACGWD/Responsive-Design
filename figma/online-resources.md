@@ -44,30 +44,35 @@ By default, the online version of **Figma uses Google Fonts** and does not have 
 [https://www.linkedin.com/learning/figma-essential-training-the-basics/get-creative-with-effects](https://www.linkedin.com/learning/figma-essential-training-the-basics/get-creative-with-effects)
 
 
-### Work with Layers
-
-[https://www.linkedin.com/learning/figma-essential-training-the-basics/organize-with-layers](https://www.linkedin.com/learning/figma-essential-training-the-basics/organize-with-layers)
 
 
 
 ## BIG TIME SAVERS
 
 
-### Styles in Figma
+### Work with Layers
+
+[https://www.linkedin.com/learning/figma-essential-training-the-basics/organize-with-layers](https://www.linkedin.com/learning/figma-essential-training-the-basics/organize-with-layers)
+
+
+### Styles in Figma (required)
 
 [https://www.linkedin.com/learning/figma-essential-training-the-basics/save-formatting-you-can-reuse](https://www.linkedin.com/learning/figma-essential-training-the-basics/save-formatting-you-can-reuse)
 
 
-### Reuse elements as Components
+### Reuse elements as Components (required)
 
 [https://www.linkedin.com/learning/figma-essential-training-the-basics/reuse-content-with-components](https://www.linkedin.com/learning/figma-essential-training-the-basics/reuse-content-with-components)
 
 
-### Intro to Prototyping
+
+## Prototyping
+
+### Intro to Prototyping (required)
 
 [https://www.linkedin.com/learning/figma-essential-training-the-basics/an-intro-to-prototyping](https://www.linkedin.com/learning/figma-essential-training-the-basics/an-intro-to-prototyping)
 
 
-### Start Prototyping
+### Start Prototyping (required)
 
 [https://www.linkedin.com/learning/figma-essential-training-the-basics/start-prototyping](https://www.linkedin.com/learning/figma-essential-training-the-basics/start-prototyping)
