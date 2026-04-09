@@ -66,7 +66,7 @@ By default, the online version of **Figma uses Google Fonts** and does not have 
 
 
 
-## Prototyping
+## PROTOTYPING
 
 ### Intro to Prototyping (required)
 
