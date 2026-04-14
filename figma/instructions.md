@@ -8,6 +8,7 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 
 - Responsive design: mobile and desktop
 - Dark mode enabled for energy saving
+- Light mode option
 - "Hydro powered" web hosting slogan in the footer 
 - Design is presented as a working prototype
 
