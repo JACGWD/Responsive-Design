@@ -9,9 +9,9 @@
 
 | Criteria | Value |
 | ------- | ------ |
-| Mobile design (dark mode) | 10% |
-| Desktop design (dark mode) | 10% |
-| "Hydro powered" web hosting slogan in the footer | 10% |
-| Typography | 10% |
-| Working prototype | 30% |
+| Mobile design (dark mode color palette/layout) | 10% |
+| Desktop design (dark mode color palette/layout) | 10% |
+| "Hydro powered" web hosting slogan footer design | 10% |
+| Typography | 20% |
+| Working prototype | 20% |
 | Overall aesthetics | 30% |
