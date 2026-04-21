@@ -26,7 +26,7 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Basic page template
 - Image gallery w/pop-up window template (based on basic page)
 - Contact form with "message sent" overlay micro-animation  (based on basic page)
-- Thank you page (based on basic page)
+- Contact Thank You page (based on basic page)
 
 ### Pages to include in Navigation
 
@@ -39,7 +39,7 @@ Create a web site **design** for an innovative REcycle/REuse municipal initiativ
 - Materials
 - Composting
 - Contact
-- Contact thank you page
+
 
 
 ### Blog header
