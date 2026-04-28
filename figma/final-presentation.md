@@ -15,5 +15,14 @@
 
 | Criteria | Value |
 | ------- | ------ |
-| Presentation of Pages/Templates / Prototype demonstration | 50% |
+| Presentation of User Flow / Prototype demonstration | 50% |
 | Overall presentation quality | 50% |
+
+
+### User Flow
+
+- Present the flow starting from the home page.
+- Home > navigation
+- Blog category page > Blog post
+- Gallery > Picture > back to gallery 
+- Contact > click Submit > Thank you
